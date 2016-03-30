@@ -1,12 +1,4 @@
 <?php
-/**
- * Config - an example for setting up system settings.
- * When you are done editing, rename this file to 'Config.php'.
- *
- * @author David Carr - dave@daveismyname.com
- * @author Edwin Hoksberg - info@edwinhoksberg.nl
- * @version 3.0
- */
 
 namespace App;
 

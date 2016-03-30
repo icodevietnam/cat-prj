@@ -1,10 +1,4 @@
 <?php
-/**
- * Error class - calls a 404 page.
- *
- * @author David Carr - dave@novaframework.com
- * @version 3.0
- */
 
 namespace Core;
 

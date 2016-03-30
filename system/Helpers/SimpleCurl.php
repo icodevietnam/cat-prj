@@ -1,10 +1,4 @@
 <?php
-/**
-* Curl class
-*
-* @author SecretD - https://github.com/SecretD
-* @version 3.0
-*/
 
 namespace Helpers;
 

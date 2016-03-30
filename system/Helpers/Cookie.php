@@ -1,10 +1,5 @@
 <?php
-/**
- * Simple cookie class
- *
- * @author Jhobanny Morillo geomorillo@yahoo.com
- * @version 3.0
- */
+
 
 namespace Helpers;
 

@@ -1,10 +1,4 @@
 <?php
-/**
- *occurred class - Custom errors
- *
- * @author David Carr - dave@daveismyname.com
- * @version 3.0
- */
 
 namespace Core;
 

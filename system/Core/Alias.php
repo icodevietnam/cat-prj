@@ -1,10 +1,5 @@
 <?php
-/**
- * Alias - make helpers available in views
- *
- * @author David Carr - dave@novaframework.com
- * @version 3.0
- */
+
 namespace Core;
 
 /**

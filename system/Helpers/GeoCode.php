@@ -1,10 +1,5 @@
 <?php
-/**
- * GeoCode Helper
- *
- * @author Mark Parrish - mark@pipcommunications.com - http://www.pipcommunications.com
- * @version 3.0
- */
+
 namespace Helpers;
 
 /**

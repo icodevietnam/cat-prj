@@ -1,10 +1,4 @@
 <?php
-/**
- * Model - the base model
- *
- * @author David Carr - dave@novaframework.com
- * @version 3.0
- */
 
 namespace Core;
 

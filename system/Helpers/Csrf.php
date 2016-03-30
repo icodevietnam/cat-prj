@@ -1,10 +1,4 @@
 <?php
-/**
- * Cross Site Request Forgery helper
- *
- * @author jimgwhit
- * @version 3.0
- */
 
 namespace Helpers;
 

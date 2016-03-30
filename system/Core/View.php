@@ -1,10 +1,4 @@
 <?php
-/**
- * View - load template pages
- *
- * @author David Carr - dave@novaframework.com
- * @version 2.2
- */
 
 namespace Core;
 

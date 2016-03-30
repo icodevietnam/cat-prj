@@ -1,10 +1,4 @@
 <?php
-/**
- * Routes - all standard routes are defined here.
- *
- * @author David Carr - dave@daveismyname.com
- * @version 3.0
- */
 
 /** Create alias for Router. */
 use Core\Router;

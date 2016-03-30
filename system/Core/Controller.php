@@ -1,11 +1,4 @@
 <?php
-/**
- * Controller - base controller
- *
- * @author David Carr - dave@novaframework.com
- * @version 3.0
- */
-
 namespace Core;
 
 use Core\Language;

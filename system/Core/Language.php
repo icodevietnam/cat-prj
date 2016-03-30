@@ -1,10 +1,5 @@
 <?php
-/**
- * Language - simple language handler.
- *
- * @author Bartek Kuśmierczuk - contact@qsma.pl - http://qsma.pl
- * @version 3.0
- */
+
 
 namespace Core;
 

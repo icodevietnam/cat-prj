@@ -1,10 +1,4 @@
 <?php
-/**
- * database Helper
- *
- * @author David Carr - dave@novaframework.com
- * @version 3.0
- */
 
 namespace Helpers;
 

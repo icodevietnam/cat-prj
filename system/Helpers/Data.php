@@ -1,10 +1,4 @@
 <?php
-/**
- * Data Helper
- *
- * @author David Carr - dave@daveismyname.com
- * @version 3.0
- */
 
 namespace Helpers;
 

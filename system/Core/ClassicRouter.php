@@ -1,10 +1,4 @@
 <?php
-/**
- * ClassicRoute - manage, in classic style, a route to an HTTP request and an assigned callback function.
- *
- * @author Virgil-Adrian Teaca - virgil@giulianaeassociati.com
- * @version 3.0
- */
 
 namespace Core;
 
