@@ -4,10 +4,10 @@ defined('DS') || define('DS', DIRECTORY_SEPARATOR);
 
 /** Define the absolute paths for configured directories */
 
-define('APPDIR', realpath(__DIR__.'/../app/').'/');
-define('SYSTEMDIR', realpath(__DIR__.'/../system/').'/');
+define('APPDIR', realpath(__DIR__.'/app/').'/');
+define('SYSTEMDIR', realpath(__DIR__.'/system/').'/');
 define('PUBLICDIR', realpath(__DIR__).'/');
-define('ROOTDIR', realpath(__DIR__.'/../').'/');
+define('ROOTDIR', realpath(__DIR__.'/').'/');
 
 /** load composer autoloader */
 if (file_exists(ROOTDIR.'vendor/autoload.php')) {
