@@ -56,9 +56,9 @@
                     class="nav-label">Manage User</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="<c:url value='/admin/user/list'/>">Manage Users</a></li>
-                        <%-- <li><a href="<c:url value='/admin/department/list'/>">Phòng ban</a></li> --%>
+                        <li><a href="<c:url value='/admin/department/list'/>">Phòng ban</a></li>
                         <li><a href="<c:url value='/admin/role/list'/>">Manage Role</a></li>
-                    <%-- <li><a href="<c:url value='/admin/customer/list'/>">Quản lý khách hàng</a></li> --%>
+                        <li><a href="<c:url value='/admin/customer/list'/>">Quản lý khách hàng</a></li>
                     </ul>
                 </li>
                 <li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
