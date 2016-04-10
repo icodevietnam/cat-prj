@@ -21,7 +21,18 @@
     ]);
     echo $css; //place to pass data / plugable hook zone
     ?>
-</head>
+
+    <?php
+    Assets::js([
+    Url::templatePath().'js/jquery-2.1.1.js',
+    Url::templatePath().'js/bootstrap-select.js',
+    Url::templatePath().'js/bootstrap-datepicker.js',
+    Url::templatePath().'js/jquery.dataTables.js',
+    Url::templatePath().'js/dataTables.bootstrap.js',
+    Url::templatePath().'js/jquery.validate.js',
+    Url::templatePath().'js/bootstrap.min.js',
+]);
+?>
 <body>
 <?php echo $afterBody; //place to pass data / plugable hook zone?>
 
@@ -44,7 +55,7 @@
                         </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="<c:url value='/admin/profile/'/>">Profile</a></li>
+                            <li><a href="<?=DIR;?>/admin/user">Profile</a></li>
                             <li><a href="<c:url value='/admin/profile/change-password'/>">Change Profile</a></li>
                             <li class="divider"></li>
                             <li><a href="<c:url value='/j_spring_security_logout'/>">Exit</a></li>
@@ -55,10 +66,8 @@
                 <li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Manage User</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="<c:url value='/admin/user/list'/>">Manage Users</a></li>
-                        <li><a href="<c:url value='/admin/department/list'/>">Phòng ban</a></li>
-                        <li><a href="<c:url value='/admin/role/list'/>">Manage Role</a></li>
-                        <li><a href="<c:url value='/admin/customer/list'/>">Quản lý khách hàng</a></li>
+                        <li><a href="<?=DIR;?>admin/user">Manage Users</a></li>
+                        <li><a href="<?=DIR;?>admin/role">Manage Roles</a></li>
                     </ul>
                 </li>
                 <li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
@@ -86,20 +95,20 @@
         <div class="navbar-header">
             <a class="navbar-minimalize minimalize-styl-2 btn btn-primary "
                 href="#"><i class="fa fa-bars"></i> </a>
-            <form role="search" class="navbar-form-custom"
+            <!-- <form role="search" class="navbar-form-custom"
                 action="search_results.html">
                 <div class="form-group">
                     <input type="text" placeholder="Tìm kiếm..."
                         class="form-control" name="top-search" id="top-search">
                 </div>
-            </form>
+            </form> -->
         </div>
         <ul class="nav navbar-top-links navbar-right">
             <li><span class="m-r-sm text-muted welcome-message">Hello,
                     <strong> ABC </strong> ! </span></li>
             <li class="dropdown"><a class="count-info"
                 href="<c:url value='/admin/viewNoti'/>"> <i class="fa fa-bell"></i> <span
-                    class="label label-primary">${countNav}</span>
+                    class="label label-primary">1</span>
             </a>
             </li>
 
@@ -113,10 +122,10 @@
 </div>
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-10">
-        <h2>${pageName}</h2>
+        <h2><?= $title ?></h2>
         <ol class="breadcrumb">
-            <li><a href="<c:url value='/admin/home'/>">Home</a></li>
-            <li class="active"><strong>${pageName}</strong></li>
+            <li><a href="<?=DIR;?>">Home</a></li>
+            <li class="active"><strong><?= $title ?></strong></li>
         </ol>
     </div>
     <div class="col-lg-2"></div>

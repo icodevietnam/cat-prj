@@ -13,13 +13,6 @@
 
 <?php
 Assets::js([
-	Url::templatePath().'js/jquery-2.1.1.js',
-	Url::templatePath().'js/bootstrap-select.js',
-	Url::templatePath().'js/bootstrap-datepicker.js',
-	Url::templatePath().'js/jquery.dataTables.js',
-	Url::templatePath().'js/dataTables.bootstrap.js',
-	Url::templatePath().'js/jquery.validate.js',
-	Url::templatePath().'js/bootstrap.min.js',
 	Url::templatePath().'js/plugins/metisMenu/jquery.metisMenu.js',
 	Url::templatePath().'js/plugins/slimscroll/jquery.slimscroll.min.js',
 	Url::templatePath().'js/inspinia.js',

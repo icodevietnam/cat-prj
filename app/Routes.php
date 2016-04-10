@@ -12,7 +12,9 @@ $router = Router::getInstance();
 // Default Routing
 Router::any('welcome', 'App\Controllers\Welcome@index');
 Router::any('subpage', 'App\Controllers\Welcome@subPage');
-Router::any('admin/(:any)(/(:any)(/(:any)(/(:any))))', 'App\Controllers\Demo@test');
+Router::any('admin/user', 'App\Controllers\User@index');
+Router::any('admin/role', 'App\Controllers\Role@index');
+Router::get('role/getAll', 'App\Controllers\Role@getAll');
 /** End default routes */
 
 /** Module routes. */
