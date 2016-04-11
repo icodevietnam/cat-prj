@@ -14,7 +14,7 @@ class Users extends Model
 	//Get All
 
 	function getAll(){
-		return $this->_db->select("SELECT * FROM ".PREFIX."roles order by id desc ");
+		return $this->_db->select("SELECT * FROM ".PREFIX."users order by id desc ");
 	}
 
 }

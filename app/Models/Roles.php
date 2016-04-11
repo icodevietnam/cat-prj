@@ -10,4 +10,8 @@ class Roles extends Model
 	{	
 		parent::__construct();
 	}
+
+	function getAll(){
+		return $this->_db->select("SELECT * FROM ".PREFIX."roles order by id desc ");
+	}
 }
