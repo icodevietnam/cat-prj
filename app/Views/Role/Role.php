@@ -32,13 +32,13 @@
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Name</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="roleName" name="roleName" >
+							<input type="text" class="name form-control" name="name" >
 						</div>
 					</div>
 						<div class="form-group">
-							<label for="name" class="col-sm-2 control-label">Description</label>
+							<label for="description" class="col-sm-2 control-label">Description</label>
 							<div class="col-sm-10">
-							<input type="text" class="form-control" id="roleDescription" name="roleDescription" >
+							<input type="text" class="description form-control" name="description" >
 							</div>
 						</div>
 					</div>
@@ -64,22 +64,22 @@
 				</div>
 					<form id="updateItemForm" class="form-horizontal" method="POST">
 				<div class="modal-body">
-								<input type="text" class="roleId form-control hide" id="roleId" name="roleId" >
+								<input type="text" class="id form-control hide" name="id" >
 								<div class="form-group">
 									<label for="name" class="col-sm-2 control-label">Name</label>
 									<div class="col-sm-10">
-										<input type="text" class="roleName form-control" id="roleName" name="roleName" >
+										<input type="text" class="name form-control" name="name" >
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="name" class="col-sm-2 control-label">Description</label>
 									<div class="col-sm-10">
-										<input type="text" class="roleDescription form-control" id="roleDescription" name="roleDescription" >
+										<input type="text" class="description form-control" name="description" >
 									</div>
 								</div>
 				</div>
 				<div class="modal-footer">
-						<button type="button" onclick="editedItem();" class="btn btn-primary">Edit</button>
+						<button type="button" onclick="update();" class="btn btn-primary">Edit</button>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</form>

@@ -3,18 +3,18 @@ $(function() {
 	
 	$("#newItemForm").validate({
 		rules : {
-			roleName:{
+			name:{
 				required:true
 			},
-			roleDescription:{
+			description:{
 				required:true
 			}
 		},
 		messages : {
-			roleName:{
+			name:{
 				required:"Name is not blank"
 			},
-			roleDescription:{
+			description:{
 				required:"Description is not blank"
 			}
 		},
@@ -22,18 +22,18 @@ $(function() {
 	
 	$("#updateItemForm").validate({
 		rules : {
-			roleName:{
+			name:{
 				required:true
 			},
-			roleDescription:{
+			description:{
 				required:true
 			}
 		},
 		messages : {
-			roleName:{
+			name:{
 				required:"Name is not blank"
 			},
-			roleDescription:{
+			description:{
 				required:"Description is not blank"
 			}
 		},
@@ -41,31 +41,31 @@ $(function() {
 });
 
 function displayTable() {
-	var dataDepartments = [];
+	var dataItems = [];
 	$.ajax({
-		url : "/project/role/getAll",
+		url : "/cat-prj/role/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
 			var i = 0;
 			$.each(response, function(key, value) {
 				i++;
-				dataDepartments.push([
+				dataItems.push([
 						i,
 						value.name,value.description,
-						"<button class='btn btn-sm btn-primary' onclick='editItem("
-								+ value.id + ")' >Edit</button>",
+						"<button class='btn btn-sm btn-primary' onclick='getItem("
+								+ value.id + ");' >Edit</button>",
 						"<button class='btn btn-sm btn-danger' onclick='deleteItem("
-								+ value.id + ")'>Delete</button>" ]);
+								+ value.id + ");'>Delete</button>" ]);
 			});
-			$('#tblDepartment').dataTable({
+			$('#tblItems').dataTable({
 				"bDestroy" : true,
 				"bSort" : true,
 				"bFilter" : true,
 				"bLengthChange" : true,
 				"bPaginate" : true,
 				"sDom" : '<"top">rt<"bottom"flp><"clear">',
-				"aaData" : dataDepartments,
+				"aaData" : dataItems,
 				"aaSorting" : [],
 				"aoColumns" : [ {
 					"sTitle" : "No"
@@ -83,59 +83,69 @@ function displayTable() {
 	});
 }
 
-function editItem(id) {
+function getItem(id) {
 	$.ajax({
-		url : "/project/role/get",
+		url : "/cat-prj/role/get",
 		type : "GET",
 		data : {
 			itemId : id
 		},
 		dataType : "JSON",
-		success : function(response) {
-			$("#updateItemForm .roleId").val(response.id);
-			$("#updateItemForm .roleName").val(response.name);
-			$("#updateItemForm .roleDescription").val(response.description);
+		success : function(data) {
+			$.each(data, function(key, value) {
+				$("#updateItemForm .id").val(value.id);
+				$("#updateItemForm .name").val(value.name);
+				$("#updateItemForm .description").val(value.description);
+			})	
+		},
+		complete : function(){
 			$("#updateItem").modal("show");
-		}
+		},
+		error: function (request, status, error) {
+        	alert(request.responseText);
+    	}
 	});
 }
 
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/project/role/delete",
+			url : "/cat-prj/role/delete",
 			type : "POST",
 			data : {
 				itemId : id
 			},
 			dataType : "JSON",
 			success : function(response) {
+			},
+			complete : function(){
 				displayTable();
 			}
 		});
 	}
 }
 
-function editedItem() {
+function update() {
 	if($("#updateItemForm").valid()){
-		var roleId = $("#updateItemForm .roleId").val();
-		var roleName = $("#updateItemForm .roleName").val();
-		var roleDescription = $("#updateItemForm .roleDescription").val();
+		var id = $("#updateItemForm .id").val();
+		var name = $("#updateItemForm .name").val();
+		var description = $("#updateItemForm .description").val();
 		$.ajax({
-			url : "/project/role/update",
+			url : "/cat-prj/role/update",
 			type : "POST",
 			data : {
-				roleId : roleId,
-				roleName : roleName,
-				roleDescription : roleDescription
+				id : id,
+				name : name,
+				description : description
 			},
 			dataType : "JSON",
 			success : function(response) {
-			},complete:function(){
+			},
+			complete:function(){
 				displayTable();
-				$("#updateItemForm .roleId").val(" ");
-				$("#updateItemForm .roleName").val(" ");
-				$("#updateItemForm .roleDescription").val(" ");
+				$("#updateItemForm .id").val(" ");
+				$("#updateItemForm .name").val(" ");
+				$("#updateItemForm .description").val(" ");
 				$("#updateItem").modal("hide");
 			}
 		});
@@ -144,14 +154,14 @@ function editedItem() {
 
 function insertItem() {
 	if($("#newItemForm").valid()){
-		var roleName = $("#roleName").val();
-		var roleDescription = $("#roleDescription").val();
+		var name = $("#newItemForm .name").val();
+		var description = $("#newItemForm .description").val();
 		$.ajax({
-			url : "/project/role/new",
+			url : "/cat-prj/role/add",
 			type : "POST",
 			data : {
-				roleName : roleName,
-				roleDescription : roleDescription
+				name : name,
+				description : description
 			},
 			dataType : "JSON",
 			success : function(response) {
@@ -159,8 +169,8 @@ function insertItem() {
 			complete : function(){
 				displayTable();
 				$("#newItem").modal("hide");
-				$("#roleName").val(" ");
-				$("#roleDescription").val(" ");
+				$("#newItemForm .name").val(" ");
+				$("#newItemForm .description").val(" ");
 			}
 		});
 	}

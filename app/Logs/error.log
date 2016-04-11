@@ -1,0 +1,4167 @@
+Exception information:
+
+           Date: Apr 11, 2016 5:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:26AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:30AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:31AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:32AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:32AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:32AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:32AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:34AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(15): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:34AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:34AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:35AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:40AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): app\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:41AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:41AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:48AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:48AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:48AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:48AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:48AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:48AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:49AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:50AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:50AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:50AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:50AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:51AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:54AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:55AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:55AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:55AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:55AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:55AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:55AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:55AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:56AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:56AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:56AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:56AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:56AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 5:58AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:03AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:03AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:04AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:05AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:07AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:07AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:07AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:13AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:13AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:13AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:15AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:16AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:16AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:17AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:17AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:17AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:17AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:18AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:18AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:19AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:19AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:20AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:20AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:20AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:20AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:21AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:21AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:22AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:22AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:23AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:24AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:24AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:24AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:25AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:28AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:28AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:28AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:28AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:28AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:29AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(27): App\Models\Roles->__construct()
+#4 [internal function]: App\Controllers\Role->getAll()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#7 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#8 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#9 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#10 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:35AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:35AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:36AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:36AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:36AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:36AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 6:36AM
+
+           Message: SQLSTATE[HY000] [1049] Unknown database 'catproj'
+
+           Code: 1049
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'getAll', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(29): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
