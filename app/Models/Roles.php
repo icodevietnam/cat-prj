@@ -12,6 +12,6 @@ class Roles extends Model
 	}
 
 	function getAll(){
-		return $this->_db->select("SELECT * FROM ".PREFIX."roles order by id desc ");
+		return json_encode($this->_db->select("SELECT * FROM ".PREFIX."roles order by id desc "));
 	}
 }
