@@ -4165,3 +4165,57 @@ Exception information:
 
            ---------
 
+Exception information:
+
+           Date: Apr 11, 2016 18:43PM
+
+           Message: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+           Code: 1045
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(43): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: Apr 11, 2016 18:43PM
+
+           Message: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+           Code: 1045
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 53
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(53): PDO->__construct('mysql:host=loca...', '********', '********')
+#1 C:\xampp\htdocs\cat-prj\system\Core\Model.php(25): Helpers\Database::get()
+#2 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(11): Core\Model->__construct()
+#3 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(16): App\Models\Roles->__construct()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(185): App\Controllers\Role->__construct()
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'index', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(43): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+
