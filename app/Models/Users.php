@@ -14,18 +14,8 @@ class Users extends Model
 	//Get All
 
 	public function getAll(){
-		return $this->_db->select("SELECT * FROM ".PREFIX."users order by id desc ");
+		return $this->db->select("SELECT * FROM ".PREFIX."users order by id desc ");
 	}
-
-	function add($data){
-		try {
-			$this->_db->insert(PREFIX.'users',$data);
-			return json_encode(true);
-		} catch (Exception $e) {
-			json_encode(false);
-		}
-	}
-
 
 	function add($data){
 		try {

@@ -43,7 +43,7 @@ $(function() {
 function displayTable() {
 	var dataItems = [];
 	$.ajax({
-		url : "/cat-prj/role/getAll",
+		url : "/cat-prj/level/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -85,7 +85,7 @@ function displayTable() {
 
 function getItem(id) {
 	$.ajax({
-		url : "/cat-prj/role/get",
+		url : "/cat-prj/level/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -110,7 +110,7 @@ function getItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/cat-prj/role/delete",
+			url : "/cat-prj/level/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -131,7 +131,7 @@ function update() {
 		var name = $("#updateItemForm .name").val();
 		var description = $("#updateItemForm .description").val();
 		$.ajax({
-			url : "/cat-prj/role/update",
+			url : "/cat-prj/level/update",
 			type : "POST",
 			data : {
 				id : id,
@@ -153,22 +153,24 @@ function update() {
 }
 
 function insertItem() {
-	var form = $('#newItemForm');
-	var formData =  new FormData(form[0]);
-	if(form.valid()){
-		var avatar = $("#newItemForm .avatar").val();
+	if($("#newItemForm").valid()){
+		var name = $("#newItemForm .name").val();
+		var description = $("#newItemForm .description").val();
 		$.ajax({
-			url : "/cat-prj/user/add",
+			url : "/cat-prj/level/add",
 			type : "POST",
-			data : formData,
-			contentType : false,
-			processData : false,
+			data : {
+				name : name,
+				description : description
+			},
 			dataType : "JSON",
 			success : function(response) {
 			},
 			complete : function(){
 				displayTable();
 				$("#newItem").modal("hide");
+				$("#newItemForm .name").val(" ");
+				$("#newItemForm .description").val(" ");
 			}
 		});
 	}

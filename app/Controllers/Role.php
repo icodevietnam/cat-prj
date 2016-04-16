@@ -18,6 +18,7 @@ class Role extends Controller {
 
     public function index(){
     	$data['title'] = 'Role Management';
+        $data['menu'] = 'user';
     	View::renderTemplate('header', $data);
         View::render('Role/Role', $data);
         View::renderTemplate('footer', $data);

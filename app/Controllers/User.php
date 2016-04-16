@@ -12,11 +12,12 @@ class User extends Controller {
 	public function __construct()
     {
         parent::__construct();
-        this->users = new \App\Models
+        $this->users = new \App\Models\Users();
     }
 
     public function index(){
     	$data['title'] = 'User Management';
+        $data['menu'] = 'user';
     	View::renderTemplate('header', $data);
         View::render('User/User', $data);
         View::renderTemplate('footer', $data);
@@ -27,12 +28,21 @@ class User extends Controller {
     }
 
     public function add(){
-        $name = $_POST['name'];
-        $description = $_POST['description'];
+        // $username = $_POST['username'];
+        // $password = $_POST['password'];
+        // $fullName = $_POST['fullName'];
+        // $birthDate = $_POST['birthDate'];
+        // $email = $_POST['email'];
+        // $avatar = $_FILES['avatar'];
 
-        $data = array('name' => $name,'description' => $description );
+        $upload = new \Helpers\UploadCoded();
 
-        echo json_encode($this->users->add($data));
+        /*$data = array('name' => $name,'description' => $description );*/
+
+        /*echo json_encode($this->users->add($data));*/
+        echo $upload->upload('avatar');
+
+        //echo json_encode($_FILES['avatar']);
     }
 
     public function delete(){

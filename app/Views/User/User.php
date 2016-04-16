@@ -25,21 +25,50 @@
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 				</button>
-				<h4 class="modal-title" id="myModalLabel">Add Role</h4>
+				<h4 class="modal-title" id="myModalLabel">Add User</h4>
 			</div>
 			<form id="newItemForm" class="form-horizontal" method="POST">
 				<div class="modal-body">
 					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Name</label>
+						<label for="name" class="col-sm-2 control-label">Username</label>
 						<div class="col-sm-10">
-							<input type="text" class="name form-control" name="name" >
+							<input type="text" class="username form-control" name="username" >
 						</div>
 					</div>
-						<div class="form-group">
-							<label for="description" class="col-sm-2 control-label">Description</label>
-							<div class="col-sm-10">
-							<input type="text" class="description form-control" name="description" >
-							</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" class="password form-control" name="password" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Confirm password</label>
+						<div class="col-sm-10">
+							<input type="password" class="confirmPassword form-control" name="confirmPassword" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Full Name</label>
+						<div class="col-sm-10">
+							<input type="text" class="fullName form-control" name="fullName" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Birthdate</label>
+						<div class="col-sm-10">
+							<input type="text" class="birthDate form-control" name="birthDate" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="text" class="email form-control" name="email" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Avatar</label>
+						<div class="col-sm-10">
+							<input type="file" class="avatar form-control" name="avatar" >
 						</div>
 					</div>
 				<div class="modal-footer">
@@ -64,22 +93,52 @@
 				</div>
 					<form id="updateItemForm" class="form-horizontal" method="POST">
 				<div class="modal-body">
-								<input type="text" class="id form-control hide" name="id" >
-								<div class="form-group">
-									<label for="name" class="col-sm-2 control-label">Name</label>
-									<div class="col-sm-10">
-										<input type="text" class="name form-control" name="name" >
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="name" class="col-sm-2 control-label">Description</label>
-									<div class="col-sm-10">
-										<input type="text" class="description form-control" name="description" >
-									</div>
-								</div>
+					<input type="text" class="id form-control hide" name="id" >
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Username</label>
+						<div class="col-sm-10">
+							<input type="text" class="name form-control" name="name" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" class="password form-control" name="password" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Confirm password</label>
+						<div class="col-sm-10">
+							<input type="password" class="confirmPassword form-control" name="confirmPassword" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Full Name</label>
+						<div class="col-sm-10">
+							<input type="text" class="fullName form-control" name="fullName" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Birthdate</label>
+						<div class="col-sm-10">
+							<input type="text" class="birthDate form-control" name="birthDate" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="text" class="email form-control" name="email" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Avatar</label>
+						<div class="col-sm-10">
+							<input type="file" class="avatar form-control" name="avatar" >
+						</div>
+					</div>
 				</div>
 				<div class="modal-footer">
-						<button type="button" onclick="update();" class="btn btn-primary">Edit</button>
+					<button type="button" onclick="update();" class="btn btn-primary">Edit</button>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</form>

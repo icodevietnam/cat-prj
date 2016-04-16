@@ -14,6 +14,7 @@ Router::any('welcome', 'App\Controllers\Welcome@index');
 Router::any('subpage', 'App\Controllers\Welcome@subPage');
 Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');
+Router::any('admin/level', 'App\Controllers\Level@index');
 
 //Role Admin Action
 Router::get('role/getAll', 'App\Controllers\Role@getAll');
@@ -28,6 +29,13 @@ Router::post('user/add', 'App\Controllers\User@add');
 Router::post('user/delete', 'App\Controllers\User@delete');
 Router::get('user/get', 'App\Controllers\User@get');
 Router::post('user/update', 'App\Controllers\User@update');
+
+//Level Admin Action
+Router::get('level/getAll', 'App\Controllers\Level@getAll');
+Router::post('level/add', 'App\Controllers\Level@add');
+Router::post('level/delete', 'App\Controllers\Level@delete');
+Router::get('level/get', 'App\Controllers\Level@get');
+Router::post('level/update', 'App\Controllers\Level@update');
 
 /** End default routes */
 

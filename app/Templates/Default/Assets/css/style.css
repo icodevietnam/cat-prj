@@ -7484,7 +7484,7 @@ body.skin-3 {
 }
 
 /* Fix li navigation */
-li.suply{
+li.user,li.exam,li.news{
 	background-color: #2f4050;
 }
 

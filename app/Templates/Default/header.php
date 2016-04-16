@@ -35,7 +35,7 @@
 ?>
 <body>
 <?php echo $afterBody; //place to pass data / plugable hook zone?>
-
+<?php if($menu == 'user') echo 'active'; ?>
 <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
@@ -63,26 +63,26 @@
                     </div>
                     <div class="logo-element">IN+</div>
                 </li>
-                <li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
+                <li class="user <?php if($menu == 'user') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Manage User</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="<?=DIR;?>admin/user">Manage Users</a></li>
                         <li><a href="<?=DIR;?>admin/role">Manage Roles</a></li>
+                        <li><a href="<?=DIR;?>admin/level">Manage Levels</a></li>
                     </ul>
                 </li>
-                <li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
-                    class="nav-label">Manage District</span> <span class="fa arrow"></span></a>
+                <li class="exam <?php if($menu == 'exam') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
+                    class="nav-label">Manage Examination</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="<c:url value='/admin/district/list'/>">Manage District</a></li>
-                        <li><a href="<c:url value='/admin/program/list'/>">Manage Program</a></li>
+                        <li><a href="<c:url value='/admin/question-and-answer'/>">Question & Answer</a></li>
+                        <li><a href="<c:url value='/admin/exams'/>">Check Exams</a></li>
                     </ul>
                 </li>
-                <li class="suply"><a href="index.html"><i class="fa fa-th-large"></i> <span
-                    class="nav-label">Member</span> <span class="fa arrow"></span></a>
+                <li class="news <?php if($menu == 'news') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
+                    class="nav-label">News</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="<c:url value='/admin/student/list'/>">Manage Member</a></li>
-                        <li><a href="<c:url value='/admin/report/list'/>">Manage Report</a></li>
-                        <li><a href="<c:url value='/admin/home'/>">Dashboard</a></li>
+                        <li><a href="<c:url value='/admin/report/list'/>">Manage Notification</a></li>
+                        <li><a href="<c:url value='/admin/home'/>">Manage News</a></li>
                     </ul>
                 </li>
             </ul>
