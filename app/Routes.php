@@ -29,6 +29,8 @@ Router::post('user/add', 'App\Controllers\User@add');
 Router::post('user/delete', 'App\Controllers\User@delete');
 Router::get('user/get', 'App\Controllers\User@get');
 Router::post('user/update', 'App\Controllers\User@update');
+Router::get('user/checkEmail','App\Controllers\User@checkEmailExist');
+Router::get('user/checkUser','App\Controllers\User@checkUsernameExist');
 
 //Level Admin Action
 Router::get('level/getAll', 'App\Controllers\Level@getAll');

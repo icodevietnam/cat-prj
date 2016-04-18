@@ -4,33 +4,44 @@ namespace Helpers;
 
 class UploadCoded {
 	
-	function upload($element){
+	function upload($element,$filter){
 		$message = '';
 		$reName = '';
 		$valid_file = true;
-		echo $element;
+		$valid_type = false;
 		if($_FILES[$element]['name'])
 		{
 			//if no errors...
 			if(!$_FILES[$element]['error'])
 			{
 				//now is the time to modify the future file name and validate the file
-				$reName = strtolower($_FILES[$element]['tmp_name']); //rename file
-				if($_FILES[$element]['size'] > (1024000)) //can't be larger than 1 MB
+				$name = strtolower($_FILES[$element]['name']); //rename file
+				$ext = end((explode(".", $name)));
+				$reName = uniqid().'.'.$ext;
+				if($_FILES[$element]['size'] > (SIZEIMAGE)) //can't be larger than 2 MB
 				{
 					$valid_file = false;
 					$message = 'Oops!  Your file\'s size is to large.';
 				}
+
+				if('image' === $filter){
+					if( 'png' === strtolower($ext) ||'jpg' === strtolower($ext) || 'jpeg' === strtolower($ext)  || 'bmp' === strtolower($ext) ){
+						$valid_type = true;
+					}
+				}
+				else{
+					$message = 'Oops!  Your file\'s type is wrong.';
+					$valid_type = false;
+				}
 				
 				//if the file has passed the test
-				if($valid_file)
+				if($valid_file && $valid_type)
 				{
 					//move it to where we want it to be
-					move_uploaded_file($_FILES[$element]['tmp_name'], 'uploads/'.$reName);
-					$message = 'Congratulations!  Your file was accepted.';
+					move_uploaded_file($_FILES[$element]['tmp_name'], ROOTDIR.'assets/uploads/'.$reName);
+					$message = Url::uploadPath().$reName;
 				}
 			}
-			//if there is an error...
 			else
 			{
 				//set that to be the returned message
@@ -39,4 +50,5 @@ class UploadCoded {
 		}
 		return $message;
 	}
+
 }

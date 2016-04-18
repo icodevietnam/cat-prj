@@ -39,6 +39,36 @@ class Users extends Model
 		}
 	}
 
+	function checkEmail($email){
+		$data = null;
+		try {
+			$data = $this->db->select("SELECT * FROM ".PREFIX."users WHERE email =:email",array(':email' => $email));
+			if(count($data) >= 1){
+				return false;
+			}else{
+				return true;
+			}
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+			return true;
+		}
+	}
+
+	function checkUsername($username){
+		$data = null;
+		try {
+			$data = $this->db->select("SELECT * FROM ".PREFIX."users WHERE username =:username",array(':username' => $username));
+			if(count($data) >= 1){
+				return false;
+			}else{
+				return true;
+			}
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+			return true;
+		}
+	}
+
 	function get($id){
 		$data = null;
 		try {

@@ -86,6 +86,26 @@ class Url
         return SITEURL .'templates/' .$template .$folder;
     }
 
+    public static function templateHomePath($custom = HOME, $folder = '/assets/')
+    {
+        $template = Inflector::tableize($custom);
+
+        return SITEURL .'templates/' .$template .$folder;
+    }
+
+    public static function templateLoginPath($custom = LOGIN, $folder = '/assets/')
+    {
+        $template = Inflector::tableize($custom);
+
+        return SITEURL .'templates/' .$template .$folder;
+    }
+
+
+    public static function uploadPath()
+    {
+        return SITEURL .'assets/'.'uploads/';
+    }
+
     /**
      * Created the relative address to the template folder.
      *

@@ -1,40 +1,117 @@
 $(function() {
 	displayTable();
-	
+	$(".dateInput").datepicker();
+
+	$("#newItemForm .avatar").change(function(){
+    	previewImage(this);
+	});
+
+	$("#updateItemForm .avatar").change(function(){
+    	previewImage2(this);
+	});
+
 	$("#newItemForm").validate({
 		rules : {
-			name:{
+			username:{
+				required:true,
+				remote : {
+					url : '/cat-prj/user/checkUser',
+					type : 'GET',
+					data : {
+						username : function(){
+							return $('#newItemForm .username').val();
+						}
+					}
+				}
+			},
+			password:{
+				required:true,
+				minlength : 5
+			},
+			confirmPassword : {
+				required:true,
+				equalTo : '.password'
+			},
+			fullName:{
 				required:true
 			},
-			description:{
-				required:true
+			birthDate:{
+				required : true
+			},
+			email :{
+				required : true,
+				remote : {
+					url : '/cat-prj/user/checkEmail',
+					type : 'GET',
+					data : {
+						email : function(){
+							return $('#newItemForm .email').val();
+						}
+					}
+				}
 			}
 		},
 		messages : {
-			name:{
-				required:"Name is not blank"
+			username:{
+				required:"Username is not blank",
+				remote : "Username is existed."
 			},
-			description:{
-				required:"Description is not blank"
+			password:{
+				required:"Password is not blank",
+				minlength : "Password is not less than 5 characters."
+			},
+			confirmPassword : {
+				required: 'Confirm Password is not blank' ,
+				equalTo : 'Password and confirm password are not the same'
+			},
+			fullName:{
+				required:"Full Name is not blank"
+			},
+			birthDate:{
+				required : "Birth date is not blank"
+			},
+			email :{
+				required : "Email is not blank",
+				remote : "Email is existed"
 			}
 		},
 	});
 	
 	$("#updateItemForm").validate({
 		rules : {
-			name:{
+			username:{
 				required:true
 			},
-			description:{
+			password:{
+				required:true,
+				minlength : 5
+			},
+			fullName:{
 				required:true
+			},
+			birthDate:{
+				required : true
+			},
+			email :{
+				required : true
 			}
 		},
 		messages : {
-			name:{
-				required:"Name is not blank"
+			username:{
+				required:"Username is not blank"
 			},
-			description:{
-				required:"Description is not blank"
+			password:{
+				required:"Password is not blank",
+				minlength : "Password is not less than 5 characters."
+			},
+			fullName:{
+				required:"Full Name is not blank"
+			},
+			birthDate:{
+				required : "Birth date is not blank"
+			},
+			email :{
+				required : "Email is not blank",
 			}
 		},
 	});
@@ -43,7 +120,7 @@ $(function() {
 function displayTable() {
 	var dataItems = [];
 	$.ajax({
-		url : "/cat-prj/role/getAll",
+		url : "/cat-prj/user/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -52,7 +129,9 @@ function displayTable() {
 				i++;
 				dataItems.push([
 						i,
-						value.name,value.description,
+						value.username,value.fullname,value.email,
+						"<img alt='image' class='img-rounded' width='60px' src='"
+                            + value.avatar + "' />",
 						"<button class='btn btn-sm btn-primary' onclick='getItem("
 								+ value.id + ");' >Edit</button>",
 						"<button class='btn btn-sm btn-danger' onclick='deleteItem("
@@ -70,9 +149,13 @@ function displayTable() {
 				"aoColumns" : [ {
 					"sTitle" : "No"
 				}, {
-					"sTitle" : "Name"
+					"sTitle" : "Username"
 				}, {
-					"sTitle" : "Description"
+					"sTitle" : "Full Name"
+				}, {
+					"sTitle" : "Email"
+				}, {
+					"sTitle" : "Avatar"
 				}, {
 					"sTitle" : "Edit"
 				}, {
@@ -85,7 +168,7 @@ function displayTable() {
 
 function getItem(id) {
 	$.ajax({
-		url : "/cat-prj/role/get",
+		url : "/cat-prj/user/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -94,8 +177,15 @@ function getItem(id) {
 		success : function(data) {
 			$.each(data, function(key, value) {
 				$("#updateItemForm .id").val(value.id);
-				$("#updateItemForm .name").val(value.name);
-				$("#updateItemForm .description").val(value.description);
+				$("#updateItemForm .username").val(value.username);
+				$("#updateItemForm .password").val(value.password);
+				$("#updateItemForm .confirmPassword").val(value.password);
+				$("#updateItemForm .fullName").val(value.fullname);
+				var date = moment(value.birthdate).format('MM/DD/YYYY');
+				$("#updateItemForm .birthDate").val(date);
+				$("#updateItemForm .birthDate").attr('data-date',date);
+				$("#updateItemForm .email").val(value.email);
+				$('.preview2').attr('src', value.avatar);
 			})	
 		},
 		complete : function(){
@@ -110,7 +200,7 @@ function getItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/cat-prj/role/delete",
+			url : "/cat-prj/user/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -126,26 +216,27 @@ function deleteItem(id) {
 }
 
 function update() {
-	if($("#updateItemForm").valid()){
-		var id = $("#updateItemForm .id").val();
-		var name = $("#updateItemForm .name").val();
-		var description = $("#updateItemForm .description").val();
+	var form = $('#updateItemForm');
+	var formData =  new FormData(form[0]);
+	if(form.valid()){
 		$.ajax({
-			url : "/cat-prj/role/update",
+			url : "/cat-prj/user/update",
 			type : "POST",
-			data : {
-				id : id,
-				name : name,
-				description : description
-			},
+			data : formData,
+			contentType : false,
+			processData : false,
 			dataType : "JSON",
 			success : function(response) {
 			},
 			complete:function(){
 				displayTable();
 				$("#updateItemForm .id").val(" ");
-				$("#updateItemForm .name").val(" ");
-				$("#updateItemForm .description").val(" ");
+				$("#updateItemForm .username").val(" ");
+				$("#updateItemForm .password").val(" ");
+				$("#updateItemForm .confirmPassword").val(" ");
+				$("#updateItemForm .fullName").val(" ");
+				$("#updateItemForm .birthDate").val(" ");
+				$("#updateItemForm .email").val(" ");
 				$("#updateItem").modal("hide");
 			}
 		});
@@ -156,7 +247,6 @@ function insertItem() {
 	var form = $('#newItemForm');
 	var formData =  new FormData(form[0]);
 	if(form.valid()){
-		var avatar = $("#newItemForm .avatar").val();
 		$.ajax({
 			url : "/cat-prj/user/add",
 			type : "POST",
@@ -168,8 +258,38 @@ function insertItem() {
 			},
 			complete : function(){
 				displayTable();
+				$("#newItemForm .username").val(" ");
+				$("#newItemForm .password").val(" ");
+				$("#newItemForm .confirmPassword").val(" ");
+				$("#newItemForm .fullName").val(" ");
+				$("#newItemForm .birthDate").val(" ");
+				$("#newItemForm .email").val(" ");
 				$("#newItem").modal("hide");
 			}
 		});
 	}
+}
+
+function previewImage(input){
+	if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.preview1').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function previewImage2(input){
+	if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.preview2').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
 }

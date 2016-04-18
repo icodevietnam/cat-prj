@@ -17,7 +17,7 @@ class Level extends Controller {
 
     public function index(){
     	$data['title'] = 'Level Management';
-        $data['menu'] = 'user';
+        $data['menu'] = 'exam';
     	View::renderTemplate('header', $data);
         View::render('Level/Level', $data);
         View::renderTemplate('footer', $data);

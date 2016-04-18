@@ -14,9 +14,6 @@
         Url::templatePath().'css/dataTables.bootstrap.css',
         Url::templatePath().'css/bootstrap-select.css',
         Url::templatePath().'css/datepicker.css',
-        Url::templatePath().'css/datepicker.css',
-        Url::templatePath().'css/datepicker.css',
-        Url::templatePath().'css/datepicker.css',
         Url::templatePath().'css/style.css',
     ]);
     echo $css; //place to pass data / plugable hook zone
@@ -27,6 +24,7 @@
     Url::templatePath().'js/jquery-2.1.1.js',
     Url::templatePath().'js/bootstrap-select.js',
     Url::templatePath().'js/bootstrap-datepicker.js',
+    Url::templatePath().'js/moment.js',
     Url::templatePath().'js/jquery.dataTables.js',
     Url::templatePath().'js/dataTables.bootstrap.js',
     Url::templatePath().'js/jquery.validate.js',
@@ -68,12 +66,12 @@
                     <ul class="nav nav-second-level collapse">
                         <li><a href="<?=DIR;?>admin/user">Manage Users</a></li>
                         <li><a href="<?=DIR;?>admin/role">Manage Roles</a></li>
-                        <li><a href="<?=DIR;?>admin/level">Manage Levels</a></li>
                     </ul>
                 </li>
                 <li class="exam <?php if($menu == 'exam') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Manage Examination</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
+                        <li><a href="<?=DIR;?>admin/level">Manage Levels</a></li>
                         <li><a href="<c:url value='/admin/question-and-answer'/>">Question & Answer</a></li>
                         <li><a href="<c:url value='/admin/exams'/>">Check Exams</a></li>
                     </ul>

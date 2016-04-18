@@ -28,21 +28,22 @@ class User extends Controller {
     }
 
     public function add(){
-        // $username = $_POST['username'];
-        // $password = $_POST['password'];
-        // $fullName = $_POST['fullName'];
-        // $birthDate = $_POST['birthDate'];
-        // $email = $_POST['email'];
-        // $avatar = $_FILES['avatar'];
-
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $fullName = $_POST['fullName'];
+        $birthDate = $_POST['birthDate'];
+        $email = $_POST['email'];
         $upload = new \Helpers\UploadCoded();
+        $avatar = $upload->upload('avatar','image');
+        $birthDate = date('Y-m-d',strtotime($birthDate));
+        $fileName = $_FILES['avatar']['name'];
 
-        /*$data = array('name' => $name,'description' => $description );*/
-
-        /*echo json_encode($this->users->add($data));*/
-        echo $upload->upload('avatar');
-
-        //echo json_encode($_FILES['avatar']);
+        if("" === $fileName){
+            $data = array('username' => $username, 'password' => md5($password) ,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email,'avatar' => 'http://localhost/cat-prj/assets/images/default.png');
+        }else{
+            $data = array('username' => $username, 'password' => md5($password) ,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email,'avatar' => $avatar );
+        }
+        echo json_encode($this->users->add($data));
     }
 
     public function delete(){
@@ -57,13 +58,35 @@ class User extends Controller {
 
 
     public function update(){
-        $name = $_POST['name'];
-        $description = $_POST['description'];
         $id = $_POST['id'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $fullName = $_POST['fullName'];
+        $birthDate = $_POST['birthDate'];
+        $email = $_POST['email'];
+        $upload = new \Helpers\UploadCoded();
+        $avatar = $upload->upload('avatar','image');
+        $birthDate = date('Y-m-d',strtotime($birthDate));
+        $fileName = $_FILES['avatar']['name'];
+        if("" === $fileName){
+            $data = array('username' => $username, 'password' => md5($password) ,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email);
+        }else{
+            $data = array('username' => $username, 'password' => md5($password) ,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email,'avatar' => $avatar );
+        }
 
-        $data = array('name' => $name,'description' => $description );
         $where = array('id' => $id);
 
         echo json_encode($this->users->update($data,$where));
+    }
+
+    public function checkEmailExist(){
+        $email = $_GET['email'];
+        echo json_encode($this->users->checkEmail($email));
+    }
+
+
+    public function checkUsernameExist(){
+        $username = $_GET['username'];
+        echo json_encode($this->users->checkUsername($username));
     }
 }

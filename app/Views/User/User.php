@@ -56,7 +56,7 @@
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Birthdate</label>
 						<div class="col-sm-10">
-							<input type="text" class="birthDate form-control" name="birthDate" >
+							<input type="text" class="dateInput birthDate form-control" name="birthDate" >
 						</div>
 					</div>
 					<div class="form-group">
@@ -69,6 +69,7 @@
 						<label for="name" class="col-sm-2 control-label">Avatar</label>
 						<div class="col-sm-10">
 							<input type="file" class="avatar form-control" name="avatar" >
+							<img width="120px" class="img-rounded preview1" src="http://localhost/cat-prj/assets/images/default.png"  />
 						</div>
 					</div>
 				<div class="modal-footer">
@@ -89,7 +90,7 @@
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title" id="myModalLabel">Edit Role</h4>
+						<h4 class="modal-title" id="myModalLabel">Edit User</h4>
 				</div>
 					<form id="updateItemForm" class="form-horizontal" method="POST">
 				<div class="modal-body">
@@ -97,19 +98,13 @@
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Username</label>
 						<div class="col-sm-10">
-							<input type="text" class="name form-control" name="name" >
+							<input type="text" readOnly="true" class="username form-control" name="username" >
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Password</label>
 						<div class="col-sm-10">
 							<input type="password" class="password form-control" name="password" >
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Confirm password</label>
-						<div class="col-sm-10">
-							<input type="password" class="confirmPassword form-control" name="confirmPassword" >
 						</div>
 					</div>
 					<div class="form-group">
@@ -121,7 +116,7 @@
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Birthdate</label>
 						<div class="col-sm-10">
-							<input type="text" class="birthDate form-control" name="birthDate" >
+							<input type="text" class="dateInput birthDate form-control" name="birthDate" >
 						</div>
 					</div>
 					<div class="form-group">
@@ -134,6 +129,7 @@
 						<label for="name" class="col-sm-2 control-label">Avatar</label>
 						<div class="col-sm-10">
 							<input type="file" class="avatar form-control" name="avatar" >
+							<img width="120px" class="img-rounded preview2" src="http://localhost/cat-prj/assets/images/default.png"  />
 						</div>
 					</div>
 				</div>
