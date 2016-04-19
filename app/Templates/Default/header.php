@@ -25,12 +25,26 @@
     Url::templatePath().'js/bootstrap-select.js',
     Url::templatePath().'js/bootstrap-datepicker.js',
     Url::templatePath().'js/moment.js',
+    Url::templatePath().'js/tinymce/tinymce.min.js',
+    Url::templatePath().'js/tinymce/jquery.tinymce.min.js',
     Url::templatePath().'js/jquery.dataTables.js',
     Url::templatePath().'js/dataTables.bootstrap.js',
     Url::templatePath().'js/jquery.validate.js',
     Url::templatePath().'js/bootstrap.min.js',
 ]);
 ?>
+<script>
+    tinymce.init({
+        selector: "textarea",
+        statusbar: false,
+        setup: function (editor) {
+            editor.on('change', function () {
+                tinymce.triggerSave();
+            });
+        }
+    });
+</script>
+</head>
 <body>
 <?php echo $afterBody; //place to pass data / plugable hook zone?>
 <div id="wrapper">
@@ -69,9 +83,9 @@
                 </li>
                 <li class="exam <?php if($menu == 'exam') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Manage Examination</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">
+                    <ul class="nav nav-second-level collapse">question-answer
                         <li><a href="<?=DIR;?>admin/level">Manage Levels</a></li>
-                        <li><a href="<c:url value='/admin/question-and-answer'/>">Question & Answer</a></li>
+                        <li><a href="<?=DIR;?>admin/question-answer">Question & Answer</a></li>
                         <li><a href="<c:url value='/admin/exams'/>">Check Exams</a></li>
                     </ul>
                 </li>

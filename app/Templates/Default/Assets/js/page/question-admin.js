@@ -1,4 +1,6 @@
 $(function() {
+
+	$('.combobox').selectpicker();
 	displayTable();
 	
 	$("#newItemForm").validate({
@@ -43,7 +45,7 @@ $(function() {
 function displayTable() {
 	var dataItems = [];
 	$.ajax({
-		url : "/cat-prj/role/getAll",
+		url : "/cat-prj/question/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -85,7 +87,7 @@ function displayTable() {
 
 function getItem(id) {
 	$.ajax({
-		url : "/cat-prj/role/get",
+		url : "/cat-prj/question/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -110,7 +112,7 @@ function getItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/cat-prj/role/delete",
+			url : "/cat-prj/question/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -131,7 +133,7 @@ function update() {
 		var name = $("#updateItemForm .name").val();
 		var description = $("#updateItemForm .description").val();
 		$.ajax({
-			url : "/cat-prj/role/update",
+			url : "/cat-prj/question/update",
 			type : "POST",
 			data : {
 				id : id,
@@ -157,7 +159,7 @@ function insertItem() {
 		var name = $("#newItemForm .name").val();
 		var description = $("#newItemForm .description").val();
 		$.ajax({
-			url : "/cat-prj/role/add",
+			url : "/cat-prj/question/add",
 			type : "POST",
 			data : {
 				name : name,

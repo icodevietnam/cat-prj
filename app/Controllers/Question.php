@@ -9,16 +9,21 @@ use Helpers\Session;
 class Question extends Controller {	
 
 	private $questions;
+    private $levels;
+    private $answer;
 
 	public function __construct()
     {
         parent::__construct();
         $this->questions = new \App\Models\Questions();
+        $this->levels = new \App\Models\Levels();
+        $this->answers = new \App\Models\Answers();
     }
 
     public function index(){
-    	$data['title'] = 'Question Management';
+    	$data['title'] = 'Question & Answer Management';
         $data['menu'] = 'exam';
+        $data['levels'] = $this->levels->getAll();
     	View::renderTemplate('header', $data);
         View::render('Question/Question', $data);
         View::renderTemplate('footer', $data);

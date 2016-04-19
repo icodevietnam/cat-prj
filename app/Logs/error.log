@@ -290,3 +290,30 @@ Exception information:
 
 2016-04-18 16:21PM - Missing argument 1 for App\Controllers\User::checkUsernameExist() in C:\xampp\htdocs\cat-prj\app\Controllers\User.php on line 72
 
+Exception information:
+
+           Date: Apr 19, 2016 12:09PM
+
+           Message: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`catprj`.`prj_users`, CONSTRAINT `fk_role` FOREIGN KEY (`role`) REFERENCES `prj_roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+
+           Code: 23000
+
+           File: C:\xampp\htdocs\cat-prj\system\Helpers\Database.php
+
+           Line: 203
+
+           Stack trace:
+
+           #0 C:\xampp\htdocs\cat-prj\system\Helpers\Database.php(203): PDOStatement->execute()
+#1 C:\xampp\htdocs\cat-prj\app\Models\Roles.php(38): Helpers\Database->delete('prj_roles', Array)
+#2 C:\xampp\htdocs\cat-prj\app\Controllers\Role.php(45): App\Models\Roles->delete('1')
+#3 [internal function]: App\Controllers\Role->delete()
+#4 C:\xampp\htdocs\cat-prj\system\Core\Router.php(193): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\cat-prj\system\Core\Router.php(224): Core\Router->invokeController('App\\Controllers...', 'delete', Array)
+#6 C:\xampp\htdocs\cat-prj\system\Core\Router.php(261): Core\Router->invokeObject('App\\Controllers...', Array)
+#7 C:\xampp\htdocs\cat-prj\app\Routes.php(71): Core\Router->dispatch()
+#8 C:\xampp\htdocs\cat-prj\index.php(74): require('C:\\xampp\\htdocs...')
+#9 {main}
+
+           ---------
+

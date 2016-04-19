@@ -18,7 +18,7 @@ class Level extends Controller {
     }
 
     public function index(){
-        if(Session::get('admin-login') == false){
+        if(Session::get('admin') == null){
             Url::redirect('admin/login');
         }
     	$data['title'] = 'Level Management';

@@ -1,5 +1,13 @@
 $(function() {
 	displayTable();
+
+	$("#newItemForm .image").change(function(){
+    	previewImage(this);
+	});
+
+	$("#updateItemForm .image").change(function(){
+    	previewImage2(this);
+	});
 	
 	$("#newItemForm").validate({
 		rules : {
@@ -52,7 +60,8 @@ function displayTable() {
 				i++;
 				dataItems.push([
 						i,
-						value.title,value.image,
+						value.title,"<img alt='image' class='img-rounded' width='60px' src='"
+                            + value.image + "' />",value.content,
 						"<button class='btn btn-sm btn-primary' onclick='getItem("
 								+ value.id + ");' >Edit</button>",
 						"<button class='btn btn-sm btn-danger' onclick='deleteItem("
@@ -74,6 +83,8 @@ function displayTable() {
 				}, {
 					"sTitle" : "Image"
 				}, {
+					"sTitle" : "Content"
+				}, {
 					"sTitle" : "Edit"
 				}, {
 					"sTitle" : "Delete"
@@ -85,7 +96,7 @@ function displayTable() {
 
 function getItem(id) {
 	$.ajax({
-		url : "/cat-prj/role/get",
+		url : "/cat-prj/notification/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -94,8 +105,10 @@ function getItem(id) {
 		success : function(data) {
 			$.each(data, function(key, value) {
 				$("#updateItemForm .id").val(value.id);
-				$("#updateItemForm .name").val(value.name);
+				$("#updateItemForm .title").val(value.title);
 				$("#updateItemForm .description").val(value.description);
+				tinyMCE.activeEditor.setContent(value.content);
+				$('.preview2').attr('src', value.image);
 			})	
 		},
 		complete : function(){
@@ -110,7 +123,7 @@ function getItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/cat-prj/role/delete",
+			url : "/cat-prj/notification/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -126,52 +139,77 @@ function deleteItem(id) {
 }
 
 function update() {
-	if($("#updateItemForm").valid()){
-		var id = $("#updateItemForm .id").val();
-		var name = $("#updateItemForm .name").val();
-		var description = $("#updateItemForm .description").val();
+	var form = $('#updateItemForm');
+	var formData =  new FormData(form[0]);
+	if(form.valid()){
 		$.ajax({
-			url : "/cat-prj/role/update",
+			url : "/cat-prj/notification/update",
 			type : "POST",
-			data : {
-				id : id,
-				name : name,
-				description : description
-			},
+			data : formData,
+			contentType : false,
+			processData : false,
 			dataType : "JSON",
 			success : function(response) {
 			},
 			complete:function(){
 				displayTable();
 				$("#updateItemForm .id").val(" ");
-				$("#updateItemForm .name").val(" ");
+				$("#updateItemForm .title").val(" ");
 				$("#updateItemForm .description").val(" ");
+				$("#updateItemForm .content").val(" ");
 				$("#updateItem").modal("hide");
-			}
+			},
+			error: function (request, status, error) {
+        		alert(request.responseText);
+    		}
 		});
 	}
 }
 
 function insertItem() {
-	if($("#newItemForm").valid()){
-		var name = $("#newItemForm .name").val();
-		var description = $("#newItemForm .description").val();
+	var form = $('#newItemForm');
+	var formData =  new FormData(form[0]);
+	if(form.valid()){
 		$.ajax({
-			url : "/cat-prj/role/add",
+			url : "/cat-prj/notification/add",
 			type : "POST",
-			data : {
-				name : name,
-				description : description
-			},
+			data : formData,
+			contentType : false,
+			processData : false,
 			dataType : "JSON",
 			success : function(response) {
 			},
 			complete : function(){
 				displayTable();
 				$("#newItem").modal("hide");
-				$("#newItemForm .name").val(" ");
+				$("#newItemForm .title").val(" ");
 				$("#newItemForm .description").val(" ");
+				$("#newItemForm .content").val(" ");
 			}
 		});
 	}
+}
+
+function previewImage(input){
+	if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.preview1').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function previewImage2(input){
+	if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.preview2').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
 }

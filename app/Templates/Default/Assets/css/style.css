@@ -7502,3 +7502,12 @@ li.user,li.exam,li.news{
     height: auto;
 }
 
+.bootstrap-select > .dropdown-toggle {
+  background: white;
+  border: 1px solid #2f4050;
+  border-radius: 0px;
+  -moz-border-radius : 0px;
+  -o-border-radius : 0px;
+  -webkit-border-radius :0px;
+}
+

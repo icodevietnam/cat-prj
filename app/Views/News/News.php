@@ -25,7 +25,7 @@
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 				</button>
-				<h4 class="modal-title" id="myModalLabel">Add Notification</h4>
+				<h4 class="modal-title" id="myModalLabel">Add News</h4>
 			</div>
 			<form id="newItemForm" class="form-horizontal" method="POST">
 				<div class="modal-body">
@@ -44,13 +44,7 @@
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Content</label>
 						<div class="col-sm-9">
-							<textarea class="content editor"></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Image</label>
-						<div class="col-sm-9">
-							<textarea class="content editor"></textarea>
+							<textarea name="content" class="content editor"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
@@ -79,10 +73,11 @@
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title" id="myModalLabel">Edit Notification</h4>
+						<h4 class="modal-title" id="myModalLabel">Edit News</h4>
 				</div>
 				<form id="updateItemForm" class="form-horizontal" method="POST">
 				<div class="modal-body">
+					<input type="text" class="id form-control hide" name="id" >
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Title</label>
 						<div class="col-sm-9">
@@ -98,20 +93,14 @@
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Content</label>
 						<div class="col-sm-9">
-							<textarea class="content editor"></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Image</label>
-						<div class="col-sm-9">
-							<textarea class="content editor"></textarea>
+							<textarea id='content2' name='content' class="content editor"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Image</label>
 						<div class="col-sm-9">
 							<input type="file" class="image form-control" name="image" >
-							<img width="120px" class="img-rounded preview1" src="http://localhost/cat-prj/assets/images/default.png"  />
+							<img width="120px" class="img-rounded preview2" src="http://localhost/cat-prj/assets/images/default.png"  />
 						</div>
 					</div>
 				</div>
@@ -126,6 +115,6 @@
 
 <?php
 Assets::js([
-	Url::templatePath().'js/page/notification-admin.js'
+	Url::templatePath().'js/page/news-admin.js'
 ]);
 ?>

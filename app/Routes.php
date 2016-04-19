@@ -16,6 +16,8 @@ Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');
 Router::any('admin/level', 'App\Controllers\Level@index');
 Router::get('admin/notification', 'App\Controllers\Notification@index');
+Router::get('admin/news', 'App\Controllers\Notification@index2');
+Router::get('admin/question-answer', 'App\Controllers\Question@index');
 
 //Login Admin
 Router::get('admin/login', 'App\Controllers\Login@index');
@@ -48,10 +50,17 @@ Router::post('level/update', 'App\Controllers\Level@update');
 
 //Notification Admin Action
 Router::get('notification/getAll', 'App\Controllers\Notification@getAll');
-Router::post('notification/add', 'App\Controllers\Notification@add');
+Router::post('notification/add', 'App\Controllers\Notification@addNotification');
 Router::post('notification/delete', 'App\Controllers\Notification@delete');
 Router::get('notification/get', 'App\Controllers\Notification@get');
 Router::post('notification/update', 'App\Controllers\Notification@update');
+
+//News Admin Action
+Router::get('news/getAll', 'App\Controllers\Notification@getAllNews');
+Router::post('news/delete', 'App\Controllers\Notification@delete');
+Router::post('news/add', 'App\Controllers\Notification@addNews');
+Router::post('news/update', 'App\Controllers\Notification@update');
+Router::get('news/get', 'App\Controllers\Notification@get');
 
 /** End default routes */
 
