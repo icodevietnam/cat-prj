@@ -33,6 +33,10 @@ h5 {
   margin-top: 5px;
   font-weight: 600;
 }
+
+.error {
+  color : red;
+}
 .nav > li > a {
   color: #a7b1c2 !important;
   font-weight: 600 !important;
@@ -7481,6 +7485,11 @@ body.skin-3 {
   .welcome-message {
     display: none;
   }
+}
+
+
+.modal-open .modal{
+  margin: auto;
 }
 
 /* Fix li navigation */

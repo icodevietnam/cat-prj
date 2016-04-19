@@ -33,7 +33,6 @@
 ?>
 <body>
 <?php echo $afterBody; //place to pass data / plugable hook zone?>
-<?php if($menu == 'user') echo 'active'; ?>
 <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
@@ -47,7 +46,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
                         <span class="clear">
                             <span class="block m-t-xs"> <strong
-                                    class="font-bold">ABC</strong>
+                                    class="font-bold"><?php echo Session::get('admin')[0]->fullname ?></strong>
                             </span>
                             <!-- <span class="departmentCur text-muted text-xs block">Phòng: Art Director</span> -->
                         </span>
@@ -56,7 +55,7 @@
                             <li><a href="<?=DIR;?>/admin/user">Profile</a></li>
                             <li><a href="<c:url value='/admin/profile/change-password'/>">Change Profile</a></li>
                             <li class="divider"></li>
-                            <li><a href="<c:url value='/j_spring_security_logout'/>">Exit</a></li>
+                            <li><a href="<?=DIR;?>admin/logout">Exit</a></li>
                         </ul>
                     </div>
                     <div class="logo-element">IN+</div>
@@ -79,8 +78,8 @@
                 <li class="news <?php if($menu == 'news') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">News</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="<c:url value='/admin/report/list'/>">Manage Notification</a></li>
-                        <li><a href="<c:url value='/admin/home'/>">Manage News</a></li>
+                        <li><a href="<?=DIR;?>admin/notification">Manage Notification</a></li>
+                        <li><a href="<?=DIR;?>admin/news">Manage News</a></li>
                     </ul>
                 </li>
             </ul>
@@ -103,7 +102,7 @@
         </div>
         <ul class="nav navbar-top-links navbar-right">
             <li><span class="m-r-sm text-muted welcome-message">Hello,
-                    <strong> ABC </strong> ! </span></li>
+                    <strong><?php echo Session::get('admin')[0]->username ?></strong> ! </span></li>
             <li class="dropdown"><a class="count-info"
                 href="<c:url value='/admin/viewNoti'/>"> <i class="fa fa-bell"></i> <span
                     class="label label-primary">1</span>
@@ -111,7 +110,7 @@
             </li>
 
 
-            <li><a href="<c:url value='/j_spring_security_logout'/>"> <i
+            <li><a href="<?=DIR;?>admin/logout"> <i
                     class="fa fa-sign-out"></i> Log out
             </a></li>
         </ul>

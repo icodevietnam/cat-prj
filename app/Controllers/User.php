@@ -4,6 +4,7 @@ namespace App\Controllers;
 use Core\View;
 use Core\Controller;
 use Helpers\Session;
+use Helpers\Url;
 
 class User extends Controller {	
 
@@ -16,6 +17,9 @@ class User extends Controller {
     }
 
     public function index(){
+        if(Session::get('admin') == null){
+            Url::redirect('admin/login');
+        }
     	$data['title'] = 'User Management';
         $data['menu'] = 'user';
     	View::renderTemplate('header', $data);

@@ -17,6 +17,9 @@ class Role extends Controller {
     }
 
     public function index(){
+        if(Session::get('admin') == null){
+            Url::redirect('admin/login');
+        }
     	$data['title'] = 'Role Management';
         $data['menu'] = 'user';
     	View::renderTemplate('header', $data);

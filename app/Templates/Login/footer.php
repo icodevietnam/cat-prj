@@ -2,8 +2,8 @@
 
 <?php
 Assets::js([
-	'https://code.jquery.com/jquery-1.12.1.min.js',
-    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js',
+	Url::templateLoginPath().'js/jquery-2.1.1.js',
+	Url::templateLoginPath().'js/index.js'
 ]);
 echo $js; //place to pass data / plugable hook zone
 echo $footer; //place to pass data / plugable hook zone

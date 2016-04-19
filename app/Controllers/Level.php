@@ -4,6 +4,8 @@ namespace App\Controllers;
 use Core\View;
 use Core\Controller;
 use Helpers\Session;
+use Helpers\Url;
+
 
 class Level extends Controller {	
 
@@ -16,6 +18,9 @@ class Level extends Controller {
     }
 
     public function index(){
+        if(Session::get('admin-login') == false){
+            Url::redirect('admin/login');
+        }
     	$data['title'] = 'Level Management';
         $data['menu'] = 'exam';
     	View::renderTemplate('header', $data);

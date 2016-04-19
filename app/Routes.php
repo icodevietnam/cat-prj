@@ -15,6 +15,13 @@ Router::any('subpage', 'App\Controllers\Welcome@subPage');
 Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');
 Router::any('admin/level', 'App\Controllers\Level@index');
+Router::get('admin/notification', 'App\Controllers\Notification@index');
+
+//Login Admin
+Router::get('admin/login', 'App\Controllers\Login@index');
+Router::post('admin/login','App\Controllers\Login@loginAdmin');
+Router::get('admin/logout','App\Controllers\Login@logOutAdmin');
+
 
 //Role Admin Action
 Router::get('role/getAll', 'App\Controllers\Role@getAll');
@@ -38,6 +45,13 @@ Router::post('level/add', 'App\Controllers\Level@add');
 Router::post('level/delete', 'App\Controllers\Level@delete');
 Router::get('level/get', 'App\Controllers\Level@get');
 Router::post('level/update', 'App\Controllers\Level@update');
+
+//Notification Admin Action
+Router::get('notification/getAll', 'App\Controllers\Notification@getAll');
+Router::post('notification/add', 'App\Controllers\Notification@add');
+Router::post('notification/delete', 'App\Controllers\Notification@delete');
+Router::get('notification/get', 'App\Controllers\Notification@get');
+Router::post('notification/update', 'App\Controllers\Notification@update');
 
 /** End default routes */
 

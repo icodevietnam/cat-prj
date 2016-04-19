@@ -89,4 +89,14 @@ class Users extends Model
 		}
 	}
 
+	function loginAdmin($username,$password){
+		$data = null;
+		try {
+			$data = $this->db->select("SELECT * FROM ".PREFIX."users U, ".PREFIX."roles R  WHERE U.username = :username AND U.password = :password AND U.role = R.id AND R.name='admin' ",array(':username' => $username,':password' => $password));
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+		}
+		return $data;
+	}
+
 }
