@@ -30,7 +30,16 @@ class UploadCoded {
 					}
 				}
 				else{
-					$message = 'Oops!  Your file\'s type is wrong.';
+					$message = 'Oops!  Your image file\'s type is wrong.';
+					$valid_type = false;
+				}
+
+				if('audio' === $filter){
+					if( 'mp3' === strtolower($ext) || 'wma' === strtolower($ext)){
+						$valid_type = true;
+					}
+				}else{
+					$message = 'Oops!  Your audio file\'s type is wrong.';
 					$valid_type = false;
 				}
 				

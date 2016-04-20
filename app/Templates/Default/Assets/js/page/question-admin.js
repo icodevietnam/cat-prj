@@ -54,7 +54,7 @@ function displayTable() {
 				i++;
 				dataItems.push([
 						i,
-						value.name,value.description,
+						value.name,value.description,value.level,
 						"<button class='btn btn-sm btn-primary' onclick='getItem("
 								+ value.id + ");' >Edit</button>",
 						"<button class='btn btn-sm btn-danger' onclick='deleteItem("
@@ -75,6 +75,8 @@ function displayTable() {
 					"sTitle" : "Name"
 				}, {
 					"sTitle" : "Description"
+				}, {
+					"sTitle" : "Level"
 				}, {
 					"sTitle" : "Edit"
 				}, {
@@ -155,16 +157,15 @@ function update() {
 }
 
 function insertItem() {
-	if($("#newItemForm").valid()){
-		var name = $("#newItemForm .name").val();
-		var description = $("#newItemForm .description").val();
+	var form = $('#newItemForm');
+	var formData =  new FormData(form[0]);
+	if(form.valid()){
 		$.ajax({
 			url : "/cat-prj/question/add",
 			type : "POST",
-			data : {
-				name : name,
-				description : description
-			},
+			data : formData ,
+			contentType : false,
+			processData : false,
 			dataType : "JSON",
 			success : function(response) {
 			},

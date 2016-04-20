@@ -22,7 +22,7 @@ class Login extends Controller{
 
     public function index(){
     	if(Session::get('admin') != null){
-    		Url::redirect('admin/user');
+    		Url::redirect('admin/dashboard');
     	}
     	$data['title'] = 'Login';
     	View::renderTemplate('header', $data,'login');

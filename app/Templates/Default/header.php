@@ -74,6 +74,13 @@
                     </div>
                     <div class="logo-element">IN+</div>
                 </li>
+                <li class="user <?php if($menu == 'preference') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
+                    class="nav-label">General</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="<?=DIR;?>admin/dashboard">Dashboard</a></li>
+                        <li><a href="<?=DIR;?>admin/email-preference">Email Preference</a></li>
+                    </ul>
+                </li>
                 <li class="user <?php if($menu == 'user') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Manage User</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
@@ -83,7 +90,7 @@
                 </li>
                 <li class="exam <?php if($menu == 'exam') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Manage Examination</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">question-answer
+                    <ul class="nav nav-second-level collapse">
                         <li><a href="<?=DIR;?>admin/level">Manage Levels</a></li>
                         <li><a href="<?=DIR;?>admin/question-answer">Question & Answer</a></li>
                         <li><a href="<c:url value='/admin/exams'/>">Check Exams</a></li>

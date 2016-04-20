@@ -15,8 +15,9 @@ Router::any('subpage', 'App\Controllers\Welcome@subPage');
 Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');
 Router::any('admin/level', 'App\Controllers\Level@index');
+Router::any('admin/dashboard', 'App\Controllers\Dashboard@index');
 Router::get('admin/notification', 'App\Controllers\Notification@index');
-Router::get('admin/news', 'App\Controllers\Notification@index2');
+Router::get('admin/news', 'App\Con`trollers\Notification@index2');
 Router::get('admin/question-answer', 'App\Controllers\Question@index');
 
 //Login Admin
@@ -61,6 +62,13 @@ Router::post('news/delete', 'App\Controllers\Notification@delete');
 Router::post('news/add', 'App\Controllers\Notification@addNews');
 Router::post('news/update', 'App\Controllers\Notification@update');
 Router::get('news/get', 'App\Controllers\Notification@get');
+
+//Question and ansaer Admin Action
+Router::get('question/getAll', 'App\Controllers\Question@getAll');
+Router::post('question/delete', 'App\Controllers\Question@delete');
+Router::post('question/add', 'App\Controllers\Question@add');
+Router::post('question/update', 'App\Controllers\Question@update');
+Router::get('question/get', 'App\Controllers\Question@get');
 
 /** End default routes */
 

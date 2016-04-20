@@ -36,10 +36,18 @@ class Question extends Controller {
     public function add(){
     	$name = $_POST['name'];
     	$description = $_POST['description'];
+        $level  = $_POST['level'];
+        $upload = new \Helpers\UploadCoded();
+        $audio = $upload->upload('audio','audio');
+        $fileName = $_FILES['audio']['name'];
 
-    	$data = array('name' => $name,'description' => $description );
-
-    	echo json_encode($this->questions->add($data));
+        if("" === $fileName){
+            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => 'Do not attach the audio file');
+        }else{
+            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio);
+        }
+        echo json_encode($name);
+    	//echo json_encode($this->questions->add($data));
     }
 
     public function delete(){

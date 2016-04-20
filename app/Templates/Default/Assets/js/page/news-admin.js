@@ -11,38 +11,50 @@ $(function() {
 	
 	$("#newItemForm").validate({
 		rules : {
-			name:{
+			title:{
 				required:true
 			},
 			description:{
 				required:true
+			},
+			content :{
+				required: true
 			}
 		},
 		messages : {
-			name:{
-				required:"Name is not blank"
+			title:{
+				required:"Title is not blank"
 			},
 			description:{
 				required:"Description is not blank"
+			},
+			content :{
+				required :"Content is not blank"
 			}
 		},
 	});
 	
 	$("#updateItemForm").validate({
 		rules : {
-			name:{
+			title:{
 				required:true
 			},
 			description:{
 				required:true
+			},
+			content :{
+				required: true
 			}
 		},
 		messages : {
-			name:{
-				required:"Name is not blank"
+			title:{
+				required:"Title is not blank"
 			},
 			description:{
 				required:"Description is not blank"
+			},
+			content :{
+				required: "Content is not blank"
 			}
 		},
 	});

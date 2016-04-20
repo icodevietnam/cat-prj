@@ -18,7 +18,7 @@
 
 <div class="modal fade" id="newItem" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
+	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal"
@@ -38,7 +38,7 @@
 					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Description</label>
 						<div class="col-sm-10">
-							<input type="text" class="description form-control" name="description" >
+							<textarea class="description form-control" name="description" ></textarea>
 						</div>
 					</div>
 					<div class="form-group">
@@ -50,10 +50,10 @@
 					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Level</label>
 						<div class="col-sm-10">
-							<select class='selectpicker level combobox' data-style='white' data-width="100%">
+							<select class='selectpicker level combobox' name='level' data-style='white' data-width="100%">
 								<?php 
 									foreach ($levels as $key => $value) {
-										echo "<option>".$value->name."</option>";
+										echo "<option value=".$value->id.">".$value->name."</option>";
 									}
 								?>
 							</select>
@@ -71,7 +71,7 @@
 
 <div class="modal fade" id="updateItem" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
+	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 				<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal"
@@ -92,13 +92,13 @@
 								<div class="form-group">
 									<label for="name" class="col-sm-2 control-label">Description</label>
 									<div class="col-sm-10">
-										<input type="text" class="description form-control" name="description" >
+										<textarea class="description form-control" name="description" ></textarea>
 									</div>
 								</div>
 								<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Level</label>
 						<div class="col-sm-10">
-							<select class='selectpicker level combobox' data-style='btn-info' data-width="fit">
+							<select class='selectpicker level combobox' name='level' data-style='btn-info' data-width="fit">
 								<?php 
 									foreach ($levels as $key => $value) {
 										echo "<option>".$value->name."</option>";
