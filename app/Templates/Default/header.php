@@ -93,7 +93,7 @@
                     <ul class="nav nav-second-level collapse">
                         <li><a href="<?=DIR;?>admin/level">Manage Levels</a></li>
                         <li><a href="<?=DIR;?>admin/question-answer">Question & Answer</a></li>
-                        <li><a href="<c:url value='/admin/exams'/>">Check Exams</a></li>
+                        <li><a href="<?=DIR;?>admin/check-exams">Check Exams</a></li>
                     </ul>
                 </li>
                 <li class="news <?php if($menu == 'news') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span

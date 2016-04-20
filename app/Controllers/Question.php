@@ -46,8 +46,7 @@ class Question extends Controller {
         }else{
             $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio);
         }
-        echo json_encode($audio);
-    	//echo json_encode($this->questions->add($data));
+    	echo json_encode($this->questions->add($data));
     }
 
     public function delete(){
@@ -62,11 +61,19 @@ class Question extends Controller {
 
 
     public function update(){
-    	$name = $_POST['name'];
-    	$description = $_POST['description'];
     	$id = $_POST['id'];
+        $name = $_POST['name'];
+        $description = $_POST['description'];
+        $level  = $_POST['level'];
+        $upload = new \Helpers\UploadCoded();
+        $audio = $upload->upload('audio','audio',20480000);
+        $fileName = $_FILES['audio']['name'];
 
-    	$data = array('name' => $name,'description' => $description );
+    	if("" === $fileName){
+            $data = array('name' => $name,'description' => $description,'level' => $level);
+        }else{
+            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio);
+        }
     	$where = array('id' => $id);
 
     	echo json_encode($this->questions->update($data,$where));

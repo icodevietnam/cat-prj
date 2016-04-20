@@ -2,11 +2,11 @@ $(function() {
 	displayTable();
 
 	$("#newItemForm .image").change(function(){
-    	previewImage(this);
+    	previewAudio(this);
 	});
 
 	$("#updateItemForm .image").change(function(){
-    	previewImage2(this);
+    	previewAudio2(this);
 	});
 	
 	$("#newItemForm").validate({

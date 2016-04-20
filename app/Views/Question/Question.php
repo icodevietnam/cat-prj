@@ -3,11 +3,29 @@
 		<div class="ibox">
 			<div class="ibox-content">
 				<a href="<?=DIR;?>admin/role" class="btn-link">
-					<h2><?= $title ?></h2>
+					<h2>Questions</h2>
 				</a>
 				<button data-toggle="modal" data-target="#newItem"class="btn btn-sm btn-primary">Create</button>
 				<div class="table-responsive">
 					<table id="tblItems"
+							class="table table-bordered table-hover table-striped">
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="ibox">
+			<div class="ibox-content">
+				<a href="<?=DIR;?>admin/role" class="btn-link">
+					<h2>Answers</h2>
+				</a>
+				<button data-toggle="modal" data-target="#newItem"class="btn btn-sm btn-primary">Create</button>
+				<div class="table-responsive">
+					<table id="tblItemsAnswers"
 							class="table table-bordered table-hover table-striped">
 					</table>
 				</div>
@@ -43,7 +61,7 @@
 					</div>
 					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Audio</label>
-						<div class="col-sm-10">
+						<div class="audio-preview col-sm-10">
 							<input type="file" class="audio form-control" name="audio" >
 						</div>
 					</div>
@@ -82,26 +100,32 @@
 				</div>
 					<form id="updateItemForm" class="form-horizontal" method="POST">
 				<div class="modal-body">
-								<input type="text" class="id form-control hide" name="id" >
-								<div class="form-group">
-									<label for="name" class="col-sm-2 control-label">Name</label>
-									<div class="col-sm-10">
-										<input type="text" class="name form-control" name="name" >
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="name" class="col-sm-2 control-label">Description</label>
-									<div class="col-sm-10">
-										<textarea class="description form-control" name="description" ></textarea>
-									</div>
-								</div>
-								<div class="form-group">
+					<input type="text" class="id form-control hide" name="id" >
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Name</label>
+						<div class="col-sm-10">
+							<input type="text" class="name form-control" name="name" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Description</label>
+						<div class="col-sm-10">
+							<textarea class="description form-control" name="description" ></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="description" class="col-sm-2 control-label">Audio</label>
+						<div class="audio-preview col-sm-10">
+							<input type="file" class="audio form-control" name="audio" >
+						</div>
+					</div>
+					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Level</label>
 						<div class="col-sm-10">
-							<select class='selectpicker level combobox' name='level' data-style='btn-info' data-width="fit">
+							<select class='selectpicker level combobox' name='level' data-style='white' data-width="100%">
 								<?php 
 									foreach ($levels as $key => $value) {
-										echo "<option>".$value->name."</option>";
+										echo "<option value=".$value->id.">".$value->name."</option>";
 									}
 								?>
 							</select>
