@@ -17,7 +17,7 @@ Router::any('admin/role', 'App\Controllers\Role@index');
 Router::any('admin/level', 'App\Controllers\Level@index');
 Router::any('admin/dashboard', 'App\Controllers\Dashboard@index');
 Router::get('admin/notification', 'App\Controllers\Notification@index');
-Router::get('admin/news', 'App\Con`trollers\Notification@index2');
+Router::get('admin/news', 'App\Controllers\Notification@index2');
 Router::get('admin/question-answer', 'App\Controllers\Question@index');
 
 //Login Admin

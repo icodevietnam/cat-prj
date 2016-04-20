@@ -4,7 +4,7 @@ namespace Helpers;
 
 class UploadCoded {
 	
-	function upload($element,$filter){
+	function upload($element,$filter,$size = SIZEIMAGE){
 		$message = '';
 		$reName = '';
 		$valid_file = true;
@@ -18,7 +18,7 @@ class UploadCoded {
 				$name = strtolower($_FILES[$element]['name']); //rename file
 				$ext = end((explode(".", $name)));
 				$reName = uniqid().'.'.$ext;
-				if($_FILES[$element]['size'] > (SIZEIMAGE)) //can't be larger than 2 MB
+				if($_FILES[$element]['size'] > ($size)) 
 				{
 					$valid_file = false;
 					$message = 'Oops!  Your file\'s size is to large.';

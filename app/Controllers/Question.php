@@ -38,7 +38,7 @@ class Question extends Controller {
     	$description = $_POST['description'];
         $level  = $_POST['level'];
         $upload = new \Helpers\UploadCoded();
-        $audio = $upload->upload('audio','audio');
+        $audio = $upload->upload('audio','audio',20480000);
         $fileName = $_FILES['audio']['name'];
 
         if("" === $fileName){
@@ -46,7 +46,7 @@ class Question extends Controller {
         }else{
             $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio);
         }
-        echo json_encode($name);
+        echo json_encode($audio);
     	//echo json_encode($this->questions->add($data));
     }
 
