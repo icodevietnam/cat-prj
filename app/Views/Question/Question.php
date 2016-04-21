@@ -77,6 +77,12 @@
 							</select>
 						</div>
 					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Point</label>
+						<div class="col-sm-10">
+							<input type="number" class="point form-control" name="point" >
+						</div>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" onclick="insertItem();" class="btn btn-primary">Save</button>
@@ -129,6 +135,12 @@
 									}
 								?>
 							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Point</label>
+						<div class="col-sm-10">
+							<input type="number" class="point form-control" name="point" >
 						</div>
 					</div>
 				</div>

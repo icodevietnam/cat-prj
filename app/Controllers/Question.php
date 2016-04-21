@@ -41,14 +41,15 @@ class Question extends Controller {
     	$name = $_POST['name'];
     	$description = $_POST['description'];
         $level  = $_POST['level'];
+        $point = $_POST['point'];
         $upload = new \Helpers\UploadCoded();
         $audio = $upload->upload('audio','audio',20480000);
         $fileName = $_FILES['audio']['name'];
 
         if("" === $fileName){
-            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => 'Do not attach the audio file');
+            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => 'Do not attach the audio file','point' => $point);
         }else{
-            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio);
+            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio,'point' => $point);
         }
     	echo json_encode($this->questions->add($data));
     }
@@ -71,12 +72,13 @@ class Question extends Controller {
         $level  = $_POST['level'];
         $upload = new \Helpers\UploadCoded();
         $audio = $upload->upload('audio','audio',20480000);
+        $point = $_POST['point'];
         $fileName = $_FILES['audio']['name'];
 
     	if("" === $fileName){
-            $data = array('name' => $name,'description' => $description,'level' => $level);
+            $data = array('name' => $name,'description' => $description,'level' => $level,'point' => $point);
         }else{
-            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio);
+            $data = array('name' => $name,'description' => $description,'level' => $level,'audio' => $audio,'point' => $point);
         }
     	$where = array('id' => $id);
 

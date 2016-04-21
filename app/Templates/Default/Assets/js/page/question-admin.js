@@ -340,6 +340,7 @@ function getItem(id) {
 			$.each(data, function(key, value) {
 				$("#updateItemForm .id").val(value.id);
 				$("#updateItemForm .name").val(value.name);
+				$("#updateItemForm .point").val(value.point);
 				tinyMCE.activeEditor.setContent(value.description);
 				$('#updateItemForm .level').selectpicker('val',value.level);
 				$('#updateItemForm .level').selectpicker('render');
@@ -391,6 +392,7 @@ function update() {
 				$("#updateItemForm .id").val(" ");
 				$("#updateItemForm .name").val(" ");
 				$("#updateItemForm .description").val(" ");
+				$("#updateItemForm .point").val(" ");
 				$("#updateItem").modal("hide");
 			}
 		});
@@ -415,6 +417,7 @@ function insertItem() {
 				$("#newItem").modal("hide");
 				$("#newItemForm .name").val(" ");
 				$("#newItemForm .description").val(" ");
+				$("#newItemForm .point").val(" ");
 			}
 		});
 	}
