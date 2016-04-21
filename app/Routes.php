@@ -70,6 +70,12 @@ Router::post('question/add', 'App\Controllers\Question@add');
 Router::post('question/update', 'App\Controllers\Question@update');
 Router::get('question/get', 'App\Controllers\Question@get');
 
+Router::get('answer/getAnswerById', 'App\Controllers\Question@getAnswerbyID');
+Router::post('answer/delete', 'App\Controllers\Question@deleteAns');
+Router::post('answer/add', 'App\Controllers\Question@addAns');
+Router::post('answer/update', 'App\Controllers\Question@updateAns');
+Router::get('answer/get', 'App\Controllers\Question@getAns');
+
 /** End default routes */
 
 /** Module routes. */

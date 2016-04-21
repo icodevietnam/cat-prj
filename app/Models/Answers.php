@@ -14,7 +14,7 @@ class Answers extends Model
 	function getAll(){
 		$data = null;
 		try {
-			$data = $this->db->select("SELECT * FROM ".PREFIX."questions order by id desc ");
+			$data = $this->db->select("SELECT * FROM ".PREFIX."answers order by id desc ");
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
 		}
@@ -23,7 +23,7 @@ class Answers extends Model
 
 	function add($data){
 		try {
-			$this->db->insert(PREFIX.'questions',$data);
+			$this->db->insert(PREFIX.'answers',$data);
 			return true;
 		} catch (Exception $e) {
 			
@@ -35,7 +35,7 @@ class Answers extends Model
 
 	function delete($id){
 		try {
-			$this->db->delete(PREFIX.'questions',array('id' => $id));
+			$this->db->delete(PREFIX.'answers',array('id' => $id));
 			return true;
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
@@ -43,10 +43,20 @@ class Answers extends Model
 		}
 	}
 
+	function getAnswers($quesId){
+		$data = null;
+		try {
+			$data = $this->db->select("SELECT * FROM ".PREFIX."answers WHERE question = :quesId",array(':quesId' => $quesId));
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+		}
+		return $data;
+	}
+
 	function get($id){
 		$data = null;
 		try {
-			$data = $this->db->select("SELECT * FROM ".PREFIX."questions WHERE id =:id",array(':id' => $id));
+			$data = $this->db->select("SELECT * FROM ".PREFIX."answers WHERE id =:id",array(':id' => $id));
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
 		}
@@ -55,7 +65,7 @@ class Answers extends Model
 
 	function update($data,$where){
 		try {
-			$this->db->update(PREFIX."questions",$data,$where);
+			$this->db->update(PREFIX."answers",$data,$where);
 			return true;
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";

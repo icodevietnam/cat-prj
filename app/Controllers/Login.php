@@ -39,7 +39,7 @@ class Login extends Controller{
     	//Save Session
     	if($admin !=null){
     		Session::set('admin',$admin);
-    		url::redirect('admin/user');
+    		Url::redirect('admin/dashboard');
     	}
     	else{
             $data['err'] = "Username and password was wrong.";

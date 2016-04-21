@@ -1,0 +1,6 @@
+2016-04-21 14:13PM - Missing argument 2 for app\Models\Answers::update(), called in C:\xampp\htdocs\cat-prj\app\Controllers\Question.php on line 132 and defined in C:\xampp\htdocs\cat-prj\app\Models\Answers.php on line 66
+
+2016-04-21 14:14PM - Missing argument 2 for app\Models\Answers::update(), called in C:\xampp\htdocs\cat-prj\app\Controllers\Question.php on line 132 and defined in C:\xampp\htdocs\cat-prj\app\Models\Answers.php on line 66
+
+2016-04-21 14:14PM - Missing argument 2 for app\Models\Answers::update(), called in C:\xampp\htdocs\cat-prj\app\Controllers\Question.php on line 132 and defined in C:\xampp\htdocs\cat-prj\app\Models\Answers.php on line 66
+

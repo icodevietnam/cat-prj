@@ -18,6 +18,9 @@ class Notification extends Controller {
     }
 
     public function index(){
+        if(Session::get('admin') == null){
+            Url::redirect('admin/login');
+        }
     	$data['title'] = 'Notification Management';
         $data['menu'] = 'user';
     	View::renderTemplate('header', $data);
@@ -26,6 +29,9 @@ class Notification extends Controller {
     }
 
     public function index2(){
+        if(Session::get('admin') == null){
+            Url::redirect('admin/login');
+        }
     	$data['title'] = 'News Management';
         $data['menu'] = 'user';
     	View::renderTemplate('header', $data);
