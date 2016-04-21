@@ -56,8 +56,8 @@
                 <li class="nav-header">
                     <div class="dropdown profile-element">
                         <span>
-                        <img alt="image" class="img-circle"
-                            src="<?php echo Url::templatePath().'img/profile_small.jpg' ?>" />
+                        <img alt="image" class="img-rounded" width="50px" height="50px"
+                            src="<?php echo Session::get('admin')[0]->avatar ?>" />
                         </span> 
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
                         <span class="clear">
@@ -68,8 +68,8 @@
                         </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="<?=DIR;?>/admin/user">Profile</a></li>
-                            <li><a href="<c:url value='/admin/profile/change-password'/>">Change Profile</a></li>
+                            <li><a href="<?=DIR;?>admin/profile">Profile</a></li>
+                            <li><a href="<?=DIR;?>admin/change-password">Change Password</a></li>
                             <li class="divider"></li>
                             <li><a href="<?=DIR;?>admin/logout">Exit</a></li>
                         </ul>

@@ -19,6 +19,8 @@ Router::any('admin/dashboard', 'App\Controllers\Dashboard@index');
 Router::get('admin/notification', 'App\Controllers\Notification@index');
 Router::get('admin/news', 'App\Controllers\Notification@index2');
 Router::get('admin/question-answer', 'App\Controllers\Question@index');
+Router::get('admin/profile', 'App\Controllers\Profile@profile');
+Router::get('admin/change-pw', 'App\Controllers\Profile@changePassword');
 
 //Login Admin
 Router::get('admin/login', 'App\Controllers\Login@index');
