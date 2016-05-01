@@ -10,8 +10,6 @@ $router = Router::getInstance();
 /** Define static routes. */
 
 // Default Routing
-Router::any('welcome', 'App\Controllers\Welcome@index');
-Router::any('subpage', 'App\Controllers\Welcome@subPage');
 Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');
 Router::any('admin/level', 'App\Controllers\Level@index');
@@ -20,7 +18,9 @@ Router::get('admin/notification', 'App\Controllers\Notification@index');
 Router::get('admin/news', 'App\Controllers\Notification@index2');
 Router::get('admin/question-answer', 'App\Controllers\Question@index');
 Router::get('admin/profile', 'App\Controllers\Profile@profile');
-Router::get('admin/change-pw', 'App\Controllers\Profile@changePassword');
+Router::get('admin/change-password', 'App\Controllers\Profile@changePassword');
+Router::post('user/change-profile','App\Controllers\Profile@updateProfile');
+Router::post('user/changeMyPassword','App\Controllers\Profile@changeMyPassword');
 
 //Login Admin
 Router::get('admin/login', 'App\Controllers\Login@index');
@@ -43,6 +43,7 @@ Router::get('user/get', 'App\Controllers\User@get');
 Router::post('user/update', 'App\Controllers\User@update');
 Router::get('user/checkEmail','App\Controllers\User@checkEmailExist');
 Router::get('user/checkUser','App\Controllers\User@checkUsernameExist');
+Router::get('user/checkPassword','App\Controllers\User@checkPasswordExist');
 
 //Level Admin Action
 Router::get('level/getAll', 'App\Controllers\Level@getAll');

@@ -12,15 +12,6 @@ $(function(){
 			},
 			email :{
 				required: true,
-				remote : {
-					url : '/cat-prj/user/checkEmail',
-					type : 'GET',
-					data : {
-						email : function(){
-							return $('#newItemForm .email').val();
-						}
-					}
-				}
 			}
 		},
 		messages : {
@@ -28,8 +19,7 @@ $(function(){
 				required:"fullname is not blank"
 			},
 			email:{
-				required:"Email is not blank",
-				remote : "The email is existed"
+				required:"Email is not blank"
 			},
 		},
 	});
@@ -52,7 +42,7 @@ function changeProfile(){
 	var formData =  new FormData(form[0]);
 	if(form.valid()){
 		$.ajax({
-			url : "/cat-prj/user/update",
+			url : "/cat-prj/user/change-profile",
 			type : "POST",
 			data : formData,
 			contentType : false,

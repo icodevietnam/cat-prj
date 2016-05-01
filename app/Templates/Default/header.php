@@ -80,7 +80,6 @@
                     class="nav-label">General</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="<?=DIR;?>admin/dashboard">Dashboard</a></li>
-                        <li><a href="<?=DIR;?>admin/email-preference">Email Preference</a></li>
                     </ul>
                 </li>
                 <li class="user <?php if($menu == 'user') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span

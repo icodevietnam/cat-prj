@@ -8,28 +8,28 @@
 				<form id="profileForm" class="form-horizontal" method="POST">
 				<div class="form-group">
 					<label for="name" class="col-sm-2 control-label">Name</label>
-					<input type="text" value="<?php echo Session::get('admin')[0]->id ?>" class="id hide form-control" name="id" >
+					<input type="text" value="<?= $user[0]->id ?>" class="id hide form-control" name="id" >
 					<div class="col-sm-10">
-						<input type="text" readOnly="true" value="<?php echo Session::get('admin')[0]->username ?>" class="username form-control" name="username" >
+						<input type="text" readOnly="true" value="<?= $user[0]->username ?>" class="username form-control" name="username" >
 					</div>
 					</div>
 					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Fullname</label>
 						<div class="col-sm-10">
-							<input type="text" value="<?php echo Session::get('admin')[0]->fullname ?>" class="fullname form-control" name="fullname" >
+							<input type="text" value="<?= $user[0]->fullname?>" class="fullname form-control" name="fullname" >
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Email</label>
 						<div class="col-sm-10">
-							<input type="email" value="<?php echo Session::get('admin')[0]->email ?>" class="email form-control" name="email" >
+							<input type="email" value="<?= $user[0]->email ?>" class="email form-control" name="email" >
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">Avatar</label>
 						<div class="col-sm-10">
 							<input type="file" class="avatar form-control" name="avatar" >
-							<img width="120px" class="img-rounded preview" src="<?php echo Session::get('admin')[0]->avatar ?>"  />
+							<img width="120px" class="img-rounded preview" src="<?= $user[0]->avatar ?>"  />
 						</div>
 					</div>
 					<div class="form-group">

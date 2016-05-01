@@ -93,4 +93,11 @@ class User extends Controller {
         $username = $_GET['username'];
         echo json_encode($this->users->checkUsername($username));
     }
+
+    public function checkPasswordExist(){
+        $oldPassword = $_GET['oldPassword'];
+        $id = $_GET['id'];
+        //echo json_encode(md5(oldPassword));
+        echo json_encode($this->users->checkPassword(md5($oldPassword),$id));
+    }
 }
