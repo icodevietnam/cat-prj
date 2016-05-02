@@ -16,9 +16,6 @@ class Dashboard extends Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->questions = new \App\Models\Questions();
-        $this->levels = new \App\Models\Levels();
-        $this->answers = new \App\Models\Answers();
     }
 
     public function index(){

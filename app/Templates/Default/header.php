@@ -125,11 +125,11 @@
         <ul class="nav navbar-top-links navbar-right">
             <li><span class="m-r-sm text-muted welcome-message">Hello,
                     <strong><?php echo Session::get('admin')[0]->username ?></strong> ! </span></li>
-            <li class="dropdown"><a class="count-info"
+            <!-- <li class="dropdown"><a class="count-info"
                 href="<c:url value='/admin/viewNoti'/>"> <i class="fa fa-bell"></i> <span
                     class="label label-primary">1</span>
             </a>
-            </li>
+            </li> -->
 
 
             <li><a href="<?=DIR;?>admin/logout"> <i
