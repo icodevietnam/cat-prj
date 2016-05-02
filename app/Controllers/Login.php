@@ -49,11 +49,31 @@ class Login extends Controller{
     	}
     }
 
+    //Login User
+    public function login(){
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $user = $this->users->login($username,md5($password));
+        //Save Session
+        if($user !=null){
+            Session::set('user',$user);
+            echo json_encode('home');
+        }else{
+            echo json_encode('false');
+        }
+    }
+
 
     //Log Out Admin
     public function logOutAdmin(){
     	Session::destroy();
     	Url::redirect('admin/login');
+    }
+
+    public function logOut(){
+        Session::destroy();
+        Url::redirect('home');
     }
 
 }

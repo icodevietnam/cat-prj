@@ -7,7 +7,7 @@ use Core\Controller;
 use Helpers\Session;
 use Helpers\Url;
 
-class HomeIndex extends Controller {	
+class HomeAbout extends Controller {	
 
 	public function __construct()
     {
@@ -18,7 +18,7 @@ class HomeIndex extends Controller {
     	$data['title'] = 'Home';
         //$data['levels'] = $this->levels->getAll();
     	View::renderTemplate('header', $data,'home');
-        View::render('Home/Home', $data);
+        View::render('Home/AboutUs', $data);
         View::renderTemplate('footer', $data,'home');
     }
 

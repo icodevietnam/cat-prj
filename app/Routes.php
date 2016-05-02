@@ -15,6 +15,7 @@ Router::any('admin/role', 'App\Controllers\Role@index');
 Router::any('admin/level', 'App\Controllers\Level@index');
 Router::any('admin/dashboard', 'App\Controllers\Dashboard@index');
 Router::any('admin','App\Controllers\Dashboard@index');
+Router::any('admin/','App\Controllers\Dashboard@index');
 Router::get('admin/notification', 'App\Controllers\Notification@index');
 Router::get('admin/news', 'App\Controllers\Notification@index2');
 Router::get('admin/question-answer', 'App\Controllers\Question@index');
@@ -22,11 +23,15 @@ Router::get('admin/profile', 'App\Controllers\Profile@profile');
 Router::get('admin/change-password', 'App\Controllers\Profile@changePassword');
 Router::post('user/change-profile','App\Controllers\Profile@updateProfile');
 Router::post('user/changeMyPassword','App\Controllers\Profile@changeMyPassword');
+Router::get('/home','App\Controllers\HomeIndex@index');
+Router::get('/about-us','App\Controllers\HomeAbout@index');
+Router::get('/','App\Controllers\HomeIndex@index');
 
 //Login Admin
-Router::get('admin/login', 'App\Controllers\Login@index');
+Router::post('login', 'App\Controllers\Login@login');
 Router::post('admin/login','App\Controllers\Login@loginAdmin');
 Router::get('admin/logout','App\Controllers\Login@logOutAdmin');
+Router::get('logout','App\Controllers\Login@logOut');
 
 
 //Role Admin Action
@@ -45,6 +50,7 @@ Router::post('user/update', 'App\Controllers\User@update');
 Router::get('user/checkEmail','App\Controllers\User@checkEmailExist');
 Router::get('user/checkUser','App\Controllers\User@checkUsernameExist');
 Router::get('user/checkPassword','App\Controllers\User@checkPasswordExist');
+Router::post('user/createStudent','App\Controllers\User@createStudent');
 
 //Level Admin Action
 Router::get('level/getAll', 'App\Controllers\Level@getAll');

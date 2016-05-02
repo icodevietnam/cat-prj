@@ -8,7 +8,7 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: #FFF;
 }
 
 p {
@@ -54,4 +54,18 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.sm-modal { width: 450px !important ; max-height: 100% !important ; overflow-y: hidden !important ;}
+
+.input-field .error{
+  color: red;
+}
+
+.error{
+  color: red;
+}
+
+.success{
+  color: blue;
 }

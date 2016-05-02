@@ -241,6 +241,7 @@ function addAns(){
 			$('#newItemAnswer').modal('hide');
 			viewAnswer(questionId);
 			$('#newItemAnswer .questionId').val(" ");
+			$('#newItemAnswer .name').val(" ");
 			$('#newItemAnswer .correct').bootstrapSwitch('state', true);
 		},
 		error: function (request, status, error) {

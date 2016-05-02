@@ -106,6 +106,11 @@ class Url
         return SITEURL .'assets/'.'uploads/';
     }
 
+    public static function imagePath()
+    {
+        return SITEURL .'assets/'.'images/';
+    }
+
     /**
      * Created the relative address to the template folder.
      *

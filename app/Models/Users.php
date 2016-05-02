@@ -114,4 +114,14 @@ class Users extends Model
 		return $data;
 	}
 
+	function login($username,$password){
+		$data = null;
+		try {
+			$data = $this->db->select("SELECT U.* FROM ".PREFIX."users U WHERE ( U.username = :username OR U.email = :username ) AND U.password = :password AND U.role IS NULL",array(':username' => $username,':password' => $password));
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+		}
+		return $data;
+	}
+
 }

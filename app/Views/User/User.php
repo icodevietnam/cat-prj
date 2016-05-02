@@ -66,6 +66,18 @@
 						</div>
 					</div>
 					<div class="form-group">
+						<label for="description" class="col-sm-2 control-label">Role</label>
+						<div class="col-sm-10">
+							<select class='selectpicker role combobox' name='role' data-style='white' data-width="100%">
+								<?php 
+									foreach ($roles as $key => $value) {
+										echo "<option value=".$value->id.">".$value->name."</option>";
+									}
+								?>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Avatar</label>
 						<div class="col-sm-10">
 							<input type="file" class="avatar form-control" name="avatar" >
@@ -123,6 +135,18 @@
 						<label for="name" class="col-sm-2 control-label">Email</label>
 						<div class="col-sm-10">
 							<input type="text" class="email form-control" name="email" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="description" class="col-sm-2 control-label">Role</label>
+						<div class="col-sm-10">
+							<select class='selectpicker role combobox' name='role' data-style='white' data-width="100%">
+								<?php 
+									foreach ($roles as $key => $value) {
+										echo "<option value=".$value->id.">".$value->name."</option>";
+									}
+								?>
+							</select>
 						</div>
 					</div>
 					<div class="form-group">
