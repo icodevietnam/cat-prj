@@ -62,7 +62,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
                         <span class="clear">
                             <span class="block m-t-xs"> <strong
-                                    class="font-bold"><?php echo Session::get('admin')[0]->roleName ?></strong>
+                                    class="font-bold"><?php echo Session::get('admin')[0]->fullname ?></strong>
                             </span>
                             <!-- <span class="departmentCur text-muted text-xs block">Phòng: Art Director</span> -->
                         </span>

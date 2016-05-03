@@ -6,7 +6,7 @@
 		<?php 
 				foreach ($levels as $key => $value) { 
 		?>
-			<a style="margin-right: 10px;" class="col s2 btn btn-large teal waves-effect waves-light darken-3" ><?= $value->name ?></a>
+			<a style="margin-right: 10px;" class="col s2 btn btn-large teal waves-effect waves-light darken-3" href="" ><?= $value->name ?></a>
 		<?php
 			}
 		?>
