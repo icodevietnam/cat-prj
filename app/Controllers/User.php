@@ -68,7 +68,6 @@ class User extends Controller {
     public function update(){
         $id = $_POST['id'];
         $username = $_POST['username'];
-        $password = $_POST['password'];
         $fullName = $_POST['fullName'];
         $birthDate = $_POST['birthDate'];
         $email = $_POST['email'];
@@ -78,9 +77,9 @@ class User extends Controller {
         $role = $_POST['role'];
         $fileName = $_FILES['avatar']['name'];
         if("" === $fileName){
-            $data = array('username' => $username, 'password' => md5($password) ,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email,'role' => $role);
+            $data = array('username' => $username,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email,'role' => $role);
         }else{
-            $data = array('username' => $username, 'password' => md5($password) ,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email,'avatar' => $avatar,'role' => $role );
+            $data = array('username' => $username,'fullname' => $fullName,'birthdate' => $birthDate,'email' => $email,'avatar' => $avatar,'role' => $role );
         }
 
         $where = array('id' => $id);

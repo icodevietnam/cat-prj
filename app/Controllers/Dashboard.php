@@ -9,16 +9,12 @@ use Helpers\Url;
 
 class Dashboard extends Controller {	
 
-	private $questions;
-    private $levels;
-    private $answer;
+    private $generics;
 
 	public function __construct()
     {
         parent::__construct();
-        $this->questions = new \App\Models\Questions();
-        $this->levels = new \App\Models\Levels();
-        $this->answers = new \App\Models\Answers();
+        $this->generics = new \App\Models\Generics();
     }
 
     public function index(){
@@ -27,6 +23,10 @@ class Dashboard extends Controller {
         }
     	$data['title'] = 'Dashboard';
         $data['menu'] = 'preference';
+        $data['countQuestion'] = $this->generics->countTable('questions');
+        $data['countLevel'] = $this->generics->countTable('levels');
+        $data['countExaminations'] = $this->generics->countTable('examinations');
+        $data['countNew'] = $this->generics->countTable('news');
         //$data['levels'] = $this->levels->getAll();
     	View::renderTemplate('header', $data);
         View::render('AdminDashboard/Dashboard', $data);

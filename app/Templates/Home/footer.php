@@ -103,6 +103,10 @@
   		$('.dropdown-button').on('click',function(){
   			$('#dropdown2').toggle();
   		});
+
+  		$('.collapsible').collapsible({
+      		accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+   		});
 	});
 </script>
 <?php

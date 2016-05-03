@@ -114,12 +114,6 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Password</label>
-						<div class="col-sm-10">
-							<input type="password" class="password form-control" name="password" >
-						</div>
-					</div>
-					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Full Name</label>
 						<div class="col-sm-10">
 							<input type="text" class="fullName form-control" name="fullName" >
@@ -137,7 +131,7 @@
 							<input type="text" class="email form-control" name="email" >
 						</div>
 					</div>
-					<div class="form-group">
+					<div id='roleCombobox' class="form-group">
 						<label for="description" class="col-sm-2 control-label">Role</label>
 						<div class="col-sm-10">
 							<select class='selectpicker role combobox' name='role' data-style='white' data-width="100%">

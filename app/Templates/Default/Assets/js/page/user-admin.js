@@ -117,6 +117,35 @@ $(function() {
 	});
 });
 
+function getRole(id) {
+	var roleName = '';
+	if(id == null){
+		roleName = 'customer'
+	}
+	else{
+		$.ajax({
+			url : "/cat-prj/role/get",
+			type : "GET",
+			data : {
+				itemId : id
+			},
+			async : false,
+			dataType : "JSON",
+			success : function(data) {
+				$.each(data, function(key, value) {
+					roleName = value.name;
+				})	
+			},
+			complete : function(){
+			},
+			error: function (request, status, error) {
+	        	alert(request.responseText);
+	    	}
+		});
+	}
+	return roleName;
+}
+
 function displayTable() {
 	var dataItems = [];
 	$.ajax({
@@ -129,7 +158,7 @@ function displayTable() {
 				i++;
 				dataItems.push([
 						i,
-						value.username,value.fullname,value.email,
+						value.username,value.fullname,value.email,getRole(value.role),
 						"<img alt='image' class='img-rounded' width='60px' src='"
                             + value.avatar + "' />",
 						"<button class='btn btn-sm btn-primary' onclick='getItem("
@@ -154,6 +183,8 @@ function displayTable() {
 					"sTitle" : "Full Name"
 				}, {
 					"sTitle" : "Email"
+				}, {
+					"sTitle" : "Role"
 				}, {
 					"sTitle" : "Avatar"
 				}, {
@@ -185,7 +216,13 @@ function getItem(id) {
 				$("#updateItemForm .birthDate").val(date);
 				$("#updateItemForm .birthDate").attr('data-date',date);
 				$("#updateItemForm .email").val(value.email);
+				$('#updateItemForm .role').selectpicker('val',value.role);
 				$('.preview2').attr('src', value.avatar);
+				if(value.role == null){
+					$('#roleCombobox').hide();
+				}else{
+					$('#roleCombobox').show();
+				}
 			})	
 		},
 		complete : function(){

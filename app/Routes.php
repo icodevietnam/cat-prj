@@ -9,6 +9,11 @@ $router = Router::getInstance();
 
 /** Define static routes. */
 
+Router::get('/news','App\Controllers\HomeNews@news');
+Router::get('/exam','App\Controllers\HomeExam@exam');
+Router::get('/notifications','App\Controllers\HomeNews@notifications');
+Router::get('/home','App\Controllers\HomeIndex@index');
+
 // Default Routing
 Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');
@@ -30,6 +35,7 @@ Router::get('/','App\Controllers\HomeIndex@index');
 //Login Admin
 Router::post('login', 'App\Controllers\Login@login');
 Router::post('admin/login','App\Controllers\Login@loginAdmin');
+Router::get('admin/login','App\Controllers\Login@index');
 Router::get('admin/logout','App\Controllers\Login@logOutAdmin');
 Router::get('logout','App\Controllers\Login@logOut');
 

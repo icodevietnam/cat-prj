@@ -62,7 +62,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
                         <span class="clear">
                             <span class="block m-t-xs"> <strong
-                                    class="font-bold"><?php echo Session::get('admin')[0]->fullname ?></strong>
+                                    class="font-bold"><?php echo Session::get('admin')[0]->roleName ?></strong>
                             </span>
                             <!-- <span class="departmentCur text-muted text-xs block">Phòng: Art Director</span> -->
                         </span>
@@ -76,6 +76,7 @@
                     </div>
                     <div class="logo-element">IN+</div>
                 </li>
+                <?php if(Session::get('admin')[0]->roleName == 'admin') {?>
                 <li class="user <?php if($menu == 'preference') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">General</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
@@ -89,6 +90,8 @@
                         <li><a href="<?=DIR;?>admin/role">Manage Roles</a></li>
                     </ul>
                 </li>
+                <?php } ?>
+                <?php if(Session::get('admin')[0]->roleName == 'teacher' || Session::get('admin')[0]->roleName == 'admin') {?>
                 <li class="exam <?php if($menu == 'exam') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Manage Examination</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
@@ -97,6 +100,8 @@
                         <li><a href="<?=DIR;?>admin/check-exams">Check Exams</a></li>
                     </ul>
                 </li>
+                <?php } ?>
+                <?php if(Session::get('admin')[0]->roleName == 'admin') {?>
                 <li class="news <?php if($menu == 'news') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">News</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
@@ -104,6 +109,7 @@
                         <li><a href="<?=DIR;?>admin/news">Manage News</a></li>
                     </ul>
                 </li>
+                <?php } ?>
             </ul>
         </div>
     </nav>

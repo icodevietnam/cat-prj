@@ -63,7 +63,14 @@
           <a id="white-text logo-container" href="<?=DIR;?>home" class="brand-logo">English Club</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="<?=DIR;?>home">Home</a></li>
+            <?php 
+                if(Session::get('user')[0]->username != '')
+                {
+            ?>
             <li><a href="<?=DIR;?>exam">Examination</a></li>
+            <?php 
+                }
+            ?>
             <li><a href="<?=DIR;?>news">News</a></li>
             <li><a href="<?=DIR;?>notifications">Notifications</a></li>
             <li><a href="<?=DIR;?>about-us">About Us</a></li>
