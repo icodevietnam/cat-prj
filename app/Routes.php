@@ -14,6 +14,11 @@ Router::get('/exam','App\Controllers\HomeExam@exam');
 Router::get('/notifications','App\Controllers\HomeNews@notifications');
 Router::get('/home','App\Controllers\HomeIndex@index');
 
+Router::get('/test','App\Controllers\HomeExam@test');
+Router::get('/code','App\Controllers\HomeExam@testByCode');
+
+Router::get('/history','App\Controllers\HomeHistory@index');
+
 // Default Routing
 Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');

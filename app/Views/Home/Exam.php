@@ -1,3 +1,8 @@
+<?php if(Session::get('user')[0] == null ) { ?>
+	<h4>You do not have permission for do the exams</h4>
+<?php } 
+	else {
+?>
 <div style="height: 300px;" class="container">
 
 	<br/>
@@ -6,9 +11,14 @@
 		<?php 
 				foreach ($levels as $key => $value) { 
 		?>
-			<a style="margin-right: 10px;" class="col s2 btn btn-large teal waves-effect waves-light darken-3" href="" ><?= $value->name ?></a>
+			<a style="margin-right: 10px;" class="col s2 btn btn-large teal waves-effect waves-light darken-3" href="<?=DIR;?>test?level=<?= $value->id?>&userId=<?php echo Session::get('user')[0]->id ?>" ><?= $value->name ?></a>
 		<?php
 			}
 		?>
 	</div>
+	<span class="error"><?= $message ?></span>
 </div>
+
+<?php  
+	}
+?>

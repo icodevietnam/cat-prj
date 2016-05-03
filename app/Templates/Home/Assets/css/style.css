@@ -69,3 +69,7 @@ footer.page-footer {
 .success{
   color: blue;
 }
+
+.hidden{
+  display: none;
+}

@@ -68,6 +68,7 @@
                 {
             ?>
             <li><a href="<?=DIR;?>exam">Examination</a></li>
+            <li><a href="<?=DIR;?>history">History</a></li>
             <?php 
                 }
             ?>

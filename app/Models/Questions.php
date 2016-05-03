@@ -62,4 +62,14 @@ class Questions extends Model
 			return false;
 		}
 	}
+
+	public function checkQuestionsByLevels($level){
+		$data = null;
+		try {
+			$data = $this->db->select("SELECT * FROM ".PREFIX."questions WHERE level =:level",array(':level' => $level));
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+		}
+		return $data;
+	}
 }
