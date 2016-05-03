@@ -36,7 +36,7 @@ class HomeExam extends Controller {
         if($this->exams->checkExams($userId)){
             $data['title'] = 'Exams';
             $data['levels'] = $this->levels->getAll();
-            $data['message'] = 'You have the exams did not complete. So you can not create new test.Go to examinations button, and choose your exams is not finished';
+            $data['message'] = 'You have the exams did not complete. So you can not create new test.Go to History menu, and choose your exams is not finished';
             View::renderTemplate('header', $data,'home');
             View::render('Home/Exam', $data);
             View::renderTemplate('footer', $data,'home');
@@ -74,11 +74,21 @@ class HomeExam extends Controller {
         $code = $_GET['code'];
         $data['title'] = 'Test';
         $exam = $this->exams->getExamsByCode($code);
+        $dateStart = date('Y-m-d H:i:s', strtotime($exam[0]->date_start));
+        $dateEnd = date('Y-m-d H:i:s', strtotime($exam[0]->date_end));
+        $now = date("Y-m-d H:i:s");
+        if(($now < $dateStart) || ($now > $dateEnd)){
+            $data['title'] = 'Exams';
+            $data['levels'] = $this->levels->getAll();
+            $data['message'] = 'This test is over, time up';
+            View::renderTemplate('header', $data,'home');
+            View::render('Home/Exam', $data);
+            View::renderTemplate('footer', $data,'home');
+        }else{
         $questions = $exam[0]->question;
         $questionArray = explode("-", $questions);
         for($i=0;$i < count($questionArray);$i++){
             $s1 = $this->questions->get($questionArray[$i]);
-            /*$arrayS1 = array('id'=>$s1[0]->id,'name'=>$s1[0]->name,'audio'=>$s1[0]->audio,'description'=>$s1[0]->description,'level'=>$s1[0]->level,'point'=>$s1[0]->point);*/
             $stdCls = new \stdClass();
             $stdCls->id = $s1[0]->id;
             $stdCls->name = $s1[0]->name;
@@ -91,12 +101,13 @@ class HomeExam extends Controller {
         }
         $data['questions'] = $questions;
         $data['listId'] = $listId;
-        $data['from'] = $exam[0]->date_start;
-        $data['to'] = $exam[0]->date_end;
+        $data['from'] =$dateStart;
+        $data['to'] = $dateEnd;
         $data['total'] = $exam[0]->total;
         View::renderTemplate('header', $data,'home');
         View::render('Home/Test2', $data);
         View::renderTemplate('footer', $data,'home');
+        }
     }
 
     //Length Question : so luong cau hoi

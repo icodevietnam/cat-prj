@@ -9,7 +9,8 @@
 	<h5 class="col s3">Please do your test:( Total: <?= $total ?> points)</h5>
 	<p style="border-bottom: 1px dotted black; ">From : <?= $from ?> - To : <?= $to ?></p>
 	<div class="row">
-		<div class="grey lighten-2 col s12">
+		<form id='testForm'>
+		<div style="margin-bottom: 100px;padding-bottom: 20px;" class="grey lighten-2 col s12">
 			<?php 
 				$i=1;
 				foreach ($listId as $key => $value) { 
@@ -34,10 +35,21 @@
 			<?php
 				}
 			?>
+			<div class="row">
+				<button type="button" style="margin-top: 20px;margin-left: 15px;margin-right: 15px;" class='btn waves-effect waves-light teal lighten-1'>Save</button>
+				<button type="button" style="margin-top: 20px;" class='btn waves-effect waves-light teal lighten-1'>Finish</button>
+			</div>
 		</div>
+		</form>
 	</div>
 </div>
 
 <?php  
 	}
+?>
+
+<?php
+Assets::js([
+	Url::templateHomePath().'js/page/test-home.js'
+]);
 ?>

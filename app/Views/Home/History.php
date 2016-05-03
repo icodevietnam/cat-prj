@@ -30,7 +30,7 @@
 					<td><?= $value->date_end ?></td>
 					<td><?= $value->level ?></td>
 					<td><?= $value->result ?> / <?= $value->total ?></td>
-					<td><?= $value->complete == 0 ?"<a href='http://localhost/cat-prj/code?code=$value->name' class='btn waves-effect waves-light teal lighten-1'>Take Exam</a>":"Over Time" ?></td>
+					<td><?= $value->complete == 0 ?"<a href='http://localhost/cat-prj/code?code=$value->name' class='btn waves-effect waves-light teal lighten-1'>Continue Exam</a>":"Over Time" ?></td>
 				</tr>
 			<?php
 				}
