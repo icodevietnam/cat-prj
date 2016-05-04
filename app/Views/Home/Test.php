@@ -4,13 +4,13 @@
 	else {
 ?>
 <div class="container">
-
+	<span id='questionStr' class='hidden'><?= $questions ?></span>
 	<br/>
 	<h5 class="col s3">Please do your test:( Total: <?= $total ?> points)</h5>
 	<p style="border-bottom: 1px dotted black; ">From : <?= $from ?> - To : <?= $to ?></p>
 	<div class="row">
 		<form id='testForm'>
-		<div style="margin-bottom: 100px;padding-bottom: 20px;" class="grey lighten-2 col s12">
+		<div style="margin-bottom: 100px;padding-bottom: 20px;" class="col s12">
 			<?php 
 				$i=1;
 				foreach ($listId as $key => $value) { 

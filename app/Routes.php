@@ -19,6 +19,9 @@ Router::get('/code','App\Controllers\HomeExam@testByCode');
 
 Router::get('/history','App\Controllers\HomeHistory@index');
 
+Router::get('/answer/getAnswer','App\Controllers\Question@getAnswer');
+Router::get('/answer/checkAnswer','App\Controllers\Question@checkAnswer');
+
 // Default Routing
 Router::any('admin/user', 'App\Controllers\User@index');
 Router::any('admin/role', 'App\Controllers\Role@index');

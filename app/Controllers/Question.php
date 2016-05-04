@@ -11,7 +11,7 @@ class Question extends Controller {
 
 	private $questions;
     private $levels;
-    private $answer;
+    private $answers;
 
 	public function __construct()
     {
@@ -133,5 +133,16 @@ class Question extends Controller {
         $where = array('id' => $id);
         echo json_encode($this->answers->update($data,$where));
     }
+
+    function getAnswer(){
+        $questionId = $_GET['questionId'];
+        echo json_encode($this->answers->getAnswer($questionId));
+    }
+
+    function checkAnswer(){
+        $questionId = $_GET['questionId'];
+        echo json_encode($this->answers->checkAnswer($questionId));
+    }
+
 
 }

@@ -105,7 +105,7 @@ class HomeExam extends Controller {
         $data['to'] = $dateEnd;
         $data['total'] = $exam[0]->total;
         View::renderTemplate('header', $data,'home');
-        View::render('Home/Test2', $data);
+        View::render('Home/Test', $data);
         View::renderTemplate('footer', $data,'home');
         }
     }
