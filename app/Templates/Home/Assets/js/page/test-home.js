@@ -1,15 +1,17 @@
 ;$(function(){
 	var questionsStr = $('#questionStr').html();
+	console.log(questionsStr);
 	var quesArr = questionsStr.split('-');
+	var count =0;
 	for(var i=0;i<quesArr.length;i++){
 		console.log(checkRightAnswer(quesArr[i])+'-'+quesArr[i]);
+		++count;
 		if(checkRightAnswer(quesArr[i])===true){
-			loadAnswer(quesArr[i],'checkbox');
+			loadAnswer(quesArr[i],'checkbox',count);
 		}else{
-			loadAnswer(quesArr[i],'radio');
+			loadAnswer(quesArr[i],'radio',count);
 		}
 	}
-
 
 	function checkRightAnswer(questionId){
 		var isCheckBox = '';
@@ -33,7 +35,7 @@
 		return isCheckBox;
 	}
 
-	function loadAnswer(questionId,type){
+	function loadAnswer(questionId,type,length){
 		isCheckBox = true;
 		$.ajax({
 			url : "/cat-prj/answer/getAnswer",
@@ -46,16 +48,18 @@
 			success : function(response) {
 				$.each(response, function(key, value) {
 					if(type==='radio'){
-						$('#question-'+questionId).append("<p>" +
-      					"<input name='answer-"+questionId+"' value='"+value.id+"' type='radio' />" +
-      					"<label >"+value.name+"</label>" +
-    					"</p>");
+						var html = "<p>" +
+      					"<input id='answer-"+value.id+"' name='answer-"+(length)+"' value='"+value.id+"' type='radio' />" +
+      					"<label for='answer-"+value.id+"' >"+value.name+"</label>" +
+    					"</p>";
+						
 					}else{
-						$('#question-'+questionId).append("<p>" +
-      					"<input name='answer-"+questionId+"[]' value='"+value.id+"' type='checkbox' />" +
-      					"<label >"+value.name+"</label>" +
-    					"</p>");
+						var html = "<p>" +
+      					"<input id='answer-"+value.id+"' name='answer-"+(length)+"[]' value='"+value.id+"' type='checkbox' />" +
+      					"<label for='answer-"+value.id+"' >"+value.name+"</label>" +
+    					"</p>";
 					}
+					$('#question-'+length).append(html);
 				});
 			},
 			complete : function(){

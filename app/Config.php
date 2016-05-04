@@ -49,6 +49,11 @@ class Config
         define('TEMPLATE', 'Default');
 
         /**
+         * Set the default number of question.
+         */
+        define('QUESTION', 7);
+
+        /**
          * Set the default template.
          */
         define('LOGIN', 'Login');

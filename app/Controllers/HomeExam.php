@@ -7,11 +7,14 @@ use Core\Controller;
 use Helpers\Session;
 use Helpers\Url;
 
+error_reporting(E_Error);
+
 class HomeExam extends Controller {	
 
     private $levels;
     private $exams;
     private $questions;
+    private $answers;
 
 	public function __construct()
     {
@@ -19,6 +22,7 @@ class HomeExam extends Controller {
         $this->levels = new \App\Models\Levels();
         $this->exams = new \App\Models\Exams();
         $this->questions = new \App\Models\Questions();
+        $this->answers = new \App\Models\Answers();
     }
 
     public function exam(){
@@ -45,7 +49,7 @@ class HomeExam extends Controller {
             $startDate = date("Y-m-d H:i:s");
             $endDate = date('Y-m-d H:i:s',strtotime('+15 minutes'));
             //Load 10 câu hỏi 1 lúc
-            $listId = $this->surfQuestion($level,7);
+            $listId = $this->surfQuestion($level);
             $total = 0;
             for ($i=count($listId)- 1; $i >=0 ; $i--) { 
                 $questions .= $listId[$i]->id.'-';
@@ -57,6 +61,7 @@ class HomeExam extends Controller {
             $this->exams->add($entity);
 
             $data['title'] = 'Test';
+            $data['code'] = $name;
             $data['questions'] = $questions;
             $data['listId'] = $listId;
             $data['from'] = $startDate;
@@ -96,9 +101,13 @@ class HomeExam extends Controller {
             $stdCls->description = $s1[0]->description;
             $stdCls->level = $s1[0]->level;
             $stdCls->point = $s1[0]->point;
+            /*$answerArray = [];
+            $answerArray = $this->answers->getAnswer($s1[0]->id);*/
+            // $stdClass->answerArray = $answerArray;
             //echo json_encode($stdCls);
             array_push($listId, $stdCls);
         }
+        $data['code'] = $exam[0]->name;
         $data['questions'] = $questions;
         $data['listId'] = $listId;
         $data['from'] =$dateStart;
@@ -107,12 +116,13 @@ class HomeExam extends Controller {
         View::renderTemplate('header', $data,'home');
         View::render('Home/Test', $data);
         View::renderTemplate('footer', $data,'home');
+        //echo json_encode($data['code']);
         }
     }
 
     //Length Question : so luong cau hoi
     //Level theo ID
-    private function surfQuestion($level,$length){
+    private function surfQuestion($level,$length = QUESTION ){
         $questionStr = '';
         $data = $this->questions->checkQuestionsByLevels($level);
         shuffle($data);

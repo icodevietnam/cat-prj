@@ -33,6 +33,10 @@ class UploadCoded {
 					if( 'mp3' === strtolower($ext) || 'wma' === strtolower($ext)){
 						$valid_type = true;
 					}
+				}else if('audio|image' === $filter){
+					if( 'mp3' === strtolower($ext) || 'wma' === strtolower($ext) ||'png' === strtolower($ext) ||'jpg' === strtolower($ext) || 'jpeg' === strtolower($ext)  || 'bmp' === strtolower($ext) ){
+						$valid_type = true;
+					}
 				}else{
 					$message = 'Oops!  Your audio file\'s type is wrong.';
 					$valid_type = false;
