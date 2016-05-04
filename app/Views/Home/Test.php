@@ -35,12 +35,17 @@
 					<strong>Question <?php echo(++$i); ?>:<?= $value->name ?> (Points : <?= $value->point ?> )</strong> 
 					<p><?= $value->description ?></p>
 					<?php
-						if(strpos($value->audio, 'Do not') === false)
+						if(strpos($value->audio, 'mp3') !== false)
 						{
 					?>
-					<audio controls>
-					<source src="<?= $value->audio ?>" type="audio/mpeg">
-					</audio>
+						<audio controls>
+						<source src="<?= $value->audio ?>" type="audio/mpeg">
+						</audio>
+					<?php
+						}
+						else if(strpos(strtolower($value->audio),'png') !== false || strpos(strtolower($value->audio),'jpg') !== false || strpos(strtolower($value->audio),'bmp') !== false || strpos(strtolower($value->audio),'jpeg') !== false){
+					?>
+						<img class="materialboxed" width="200" src="<?= $value->audio ?>">
 					<?php
 						}
 					?>

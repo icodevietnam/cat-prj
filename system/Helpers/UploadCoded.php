@@ -33,7 +33,7 @@ class UploadCoded {
 					if( 'mp3' === strtolower($ext) || 'wma' === strtolower($ext)){
 						$valid_type = true;
 					}
-				}else if('audio|image' === $filter){
+				}else if('audio|image' === $filter || 'image|audio' === $filter){
 					if( 'mp3' === strtolower($ext) || 'wma' === strtolower($ext) ||'png' === strtolower($ext) ||'jpg' === strtolower($ext) || 'jpeg' === strtolower($ext)  || 'bmp' === strtolower($ext) ){
 						$valid_type = true;
 					}

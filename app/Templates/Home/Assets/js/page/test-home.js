@@ -71,3 +71,24 @@
 		});
 	}
 });
+
+var TestForm = {
+	submit : function(){
+		var form = $('#TestForm');
+		/*$.ajax({
+			url : "/cat-prj/user/createStudent",
+			type : "POST",
+			data : formData,
+			contentType : false,
+			processData : false,
+			dataType : "JSON",
+			success : function(response) {
+				
+			},
+			complete : function(){
+				//document.location.href = '/cat-prj/home';
+			}
+		});*/
+		alert("Dep trai");
+	}
+}
