@@ -140,23 +140,26 @@ class HomeExam extends Controller {
             $listAnswers = $this->answers->getAnswer($questionId);
             if($this->answers->checkAnswer($questionId) === true){
                 $answerArr = $_POST['answer-'.$i];
-                if($answerArr !== null){
-                    for($j=0;$j<count($answerArr);$j++){
-                        if($value->id == $answerArr[$j] && $value->correct == 1){
-                            $isRight = true;
-                        }else{
-                            $isRight = false;
+                foreach ($listAnswers as $key => $value) { 
+                    if($answerArr !== null){
+                        for($j=0;$j<count($answerArr);$j++){
+                            if($value->id == $answerArr[$j] && $value->correct == 1){
+                                $isRight = true;
+                            }else{
+                                $isRight = false;
+                            }
                         }
-                    }
-                    if($isRight == true){
-                        $point+=$question[0]->point;   
+                        if($isRight == true){
+                            $point+=$question[0]->point;   
+                        }
                     }
                 }
             }else{
                 $answerId = $_POST['answer-'.$i];
+                //echo json_encode($answerId);
                 if($answerId !== null){
                     foreach ($listAnswers as $key => $value) { 
-                        if($value->id === $answerId && $value->correct === 1){
+                        if($value->id == $answerId && $value->correct == 1){
                             $point+=$question[0]->point;
                         }
                     }
