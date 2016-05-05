@@ -18,6 +18,7 @@
               <th data-field="level">Level</th>
               <th data-field="result">Result</th>
               <th data-field="test">Test</th>
+              <th data-field="test">Test</th>
           </tr>
         </thead>
         <tbody>
@@ -31,6 +32,7 @@
 					<td><?= $value->level ?></td>
 					<td><?= $value->result ?> / <?= $value->total ?></td>
 					<td><?= $value->complete == 0 ?"<a href='".DIR."code?code=$value->name' class='btn waves-effect waves-light teal lighten-1'>Continue Exam</a>":"Over Time" ?></td>
+					<td><?= $value->complete == 1 ?"<a href='".DIR."review?code=$value->name' class='btn waves-effect waves-light teal lighten-1'>Review</a>":"" ?></td>
 				</tr>
 			<?php
 				}

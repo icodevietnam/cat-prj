@@ -1,2 +1,2 @@
-2016-05-05 6:12AM - Invalid argument supplied for foreach() in C:\xampp\htdocs\cat-prj\app\Controllers\HomeExam.php on line 145
+2016-05-05 10:57AM - array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\cat-prj\app\Controllers\HomeExam.php on line 97
 

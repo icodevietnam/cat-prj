@@ -16,6 +16,7 @@ Router::get('/home','App\Controllers\HomeIndex@index');
 
 Router::get('/test','App\Controllers\HomeExam@test');
 Router::get('/code','App\Controllers\HomeExam@testByCode');
+Router::get('/review','App\Controllers\HomeExam@reviewByCode');
 
 Router::post('/test/markTest','App\Controllers\HomeExam@markTest');
 

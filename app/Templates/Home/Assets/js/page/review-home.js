@@ -52,13 +52,13 @@
 					var isCheck = count==1?'checked':'';
 					if(type==='radio'){
 						var html = "<p>" +
-      					"<input id='answer-"+value.id+"' "+ isCheck +" name='answer-"+(length)+"' value='"+value.id+"' type='radio' />" +
+      					"<input id='answer-"+value.id+"' "+ isCheck +" name='answer-"+(length)+"' disabled value='"+value.id+"' type='radio' />" +
       					"<label for='answer-"+value.id+"' >"+value.name+"</label>" +
     					"</p>";
 						
 					}else{
 						var html = "<p>" +
-      					"<input id='answer-"+value.id+"' name='answer-"+(length)+"[]' value='"+value.id+"' type='checkbox' />" +
+      					"<input id='answer-"+value.id+"' "+ isCheck +" name='answer-"+(length)+"[]' disabled value='"+value.id+"' type='checkbox' />" +
       					"<label for='answer-"+value.id+"' >"+value.name+"</label>" +
     					"</p>";
 					}
@@ -74,26 +74,3 @@
 		});
 	}
 });
-
-var TestForm = {
-	submit : function(){
-		var form = $('#testForm');
-		var formData =  new FormData(form[0]);
-		$.ajax({
-			url : "/cat-prj/test/markTest",
-			type : "POST",
-			data : formData,
-			contentType : false,
-			processData : false,
-			dataType : "JSON",
-			success : function(response) {
-				alert('You completed this test, and your point is ' +response);
-				document.location.href = '/cat-prj/exam';
-			},
-			complete : function(){
-				//document.location.href = '/cat-prj/home';
-			}
-		});
-		//alert("Dep trai");
-	}
-}
