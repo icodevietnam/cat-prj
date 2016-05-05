@@ -1,5 +1,6 @@
 ;$(function(){
 	var questionsStr = $('#questionStr').html();
+	var backupStr = $('#backup').html();
 	console.log(questionsStr);
 	var quesArr = questionsStr.split('-');
 	var count =0;
@@ -48,18 +49,18 @@
 			success : function(response) {
 				var count = 0;
 				$.each(response, function(key, value) {
-					count++; "+ count=1?'check':'' +"
-					var isCheck = count==1?'checked':'';
+					count++;
+					console.log(value.correct);
 					if(type==='radio'){
 						var html = "<p>" +
-      					"<input id='answer-"+value.id+"' "+ isCheck +" name='answer-"+(length)+"' disabled value='"+value.id+"' type='radio' />" +
-      					"<label for='answer-"+value.id+"' >"+value.name+"</label>" +
+      					"<input "+ getCheck(value.id) +" id='answer-"+value.id+"' name='answer-"+(length)+"' disabled value='"+value.id+"' type='radio' />" +
+      					"<label "+correctStyle(value.correct)+" for='answer-"+value.id+"' >"+value.name+"</label>" + correctValue(value.correct) +
     					"</p>";
 						
 					}else{
 						var html = "<p>" +
-      					"<input id='answer-"+value.id+"' "+ isCheck +" name='answer-"+(length)+"[]' disabled value='"+value.id+"' type='checkbox' />" +
-      					"<label for='answer-"+value.id+"' >"+value.name+"</label>" +
+      					"<input "+ getCheck(value.id) +" id='answer-"+value.id+"' name='answer-"+(length)+"[]' disabled value='"+value.id+"' type='checkbox' />" +
+      					"<label "+correctStyle(value.correct)+" class='for='answer-"+value.id+"' >"+value.name+"</label>" + correctValue(value.correct) +
     					"</p>";
 					}
 					$('#question-'+length).append(html);
@@ -72,5 +73,29 @@
 	        	console.log(error);
 	    	}
 		});
+	}
+
+	function correctValue(value){
+		if(value === '1'){
+			return "<i class='small material-icons'>done</i>";
+		}else{
+			return '';
+		}
+	}
+
+	function correctStyle(value){
+		if(value === '1'){
+			return "style='color:blue;margin-right : 10px;'";
+		}else{
+			return '';
+		}
+	}
+
+	function getCheck(value){
+		if(backupStr.indexOf(value+'') != -1){
+			return 'checked';
+		}else{
+			return '';
+		}
 	}
 });

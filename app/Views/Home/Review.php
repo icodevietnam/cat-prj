@@ -6,6 +6,7 @@
 <div class="container">
 	<span id='questionStr' class='hidden'><?= $questions ?></span>
 	<span id='name' class='hidden'><?= $code ?></span>
+	<span id='backup' class='hidden'><?= $backup ?></span>
 	<br/>
 	<h5 class="col s3">Please do your test:( Total: <?= $total ?> points)</h5>
 	<p style="border-bottom: 1px dotted black; ">From : <?= $from ?> - To : <?= $to ?></p>
@@ -57,10 +58,6 @@
 			<?php
 				}
 			?>
-			<div class="row">
-				<!-- <button type="button" style="margin-top: 20px;margin-left: 15px;margin-right: 15px;" class='btn waves-effect waves-light teal lighten-1'>Save</button> -->
-				<button id="btnFinish" onclick="TestForm.submit();" type="button" style="margin-top: 20px;" class='btn waves-effect waves-light teal lighten-1'>Finish</button>
-			</div>
 		</div>
 		</form>
 	</div>

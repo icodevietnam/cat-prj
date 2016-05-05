@@ -92,6 +92,7 @@ class HomeExam extends Controller {
         $data['listId'] = $listId;
         $data['from'] =$dateStart;
         $data['to'] = $dateEnd;
+        $data['backup'] = $exam[0]->backup;
         $data['total'] = $exam[0]->total;
         View::renderTemplate('header', $data,'home');
         View::render('Home/Review', $data);
