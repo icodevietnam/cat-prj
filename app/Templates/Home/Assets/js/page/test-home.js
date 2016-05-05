@@ -78,6 +78,7 @@
 var TestForm = {
 	submit : function(){
 		var form = $('#testForm');
+		var name = $('#name').html();
 		var formData =  new FormData(form[0]);
 		$.ajax({
 			url : "/cat-prj/test/markTest",
@@ -88,7 +89,7 @@ var TestForm = {
 			dataType : "JSON",
 			success : function(response) {
 				alert('You completed this test, and your point is ' +response);
-				document.location.href = '/cat-prj/exam';
+				document.location.href = '/cat-prj/review?code=' + name;
 			},
 			complete : function(){
 				//document.location.href = '/cat-prj/home';
