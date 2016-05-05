@@ -74,21 +74,23 @@
 
 var TestForm = {
 	submit : function(){
-		var form = $('#TestForm');
-		/*$.ajax({
-			url : "/cat-prj/user/createStudent",
+		var form = $('#testForm');
+		var formData =  new FormData(form[0]);
+		$.ajax({
+			url : "/cat-prj/test/markTest",
 			type : "POST",
 			data : formData,
 			contentType : false,
 			processData : false,
 			dataType : "JSON",
 			success : function(response) {
-				
+				alert('You completed this test, and your point is ' +response);
+				document.location.href = '/cat-prj/exam';
 			},
 			complete : function(){
 				//document.location.href = '/cat-prj/home';
 			}
-		});*/
-		alert("Dep trai");
+		});
+		//alert("Dep trai");
 	}
 }

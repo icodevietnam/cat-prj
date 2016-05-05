@@ -11,6 +11,7 @@
 	<p style="border-bottom: 1px dotted black; ">From : <?= $from ?> - To : <?= $to ?></p>
 	<div class="row">
 		<form id='testForm'>
+		<input type="text" class="hidden questions form-control" name="name" value="<?= $code ?>" />
 		<div style="margin-bottom: 100px;padding-bottom: 20px;" class="col s12">
 		<!-- 
 		<p>
@@ -58,7 +59,7 @@
 			?>
 			<div class="row">
 				<!-- <button type="button" style="margin-top: 20px;margin-left: 15px;margin-right: 15px;" class='btn waves-effect waves-light teal lighten-1'>Save</button> -->
-				<button id="btnFinish" type="button" style="margin-top: 20px;" class='btn waves-effect waves-light teal lighten-1'>Finish</button>
+				<button id="btnFinish" onclick="TestForm.submit();" type="button" style="margin-top: 20px;" class='btn waves-effect waves-light teal lighten-1'>Finish</button>
 			</div>
 		</div>
 		</form>

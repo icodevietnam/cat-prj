@@ -130,4 +130,43 @@ class HomeExam extends Controller {
         return $randomId;
     }
 
+    public function markTest(){
+        $code = $_POST['name'];
+        $length = QUESTION;
+        $point = 0;
+        for($i = 1; $i <= $length ; $i++){
+            $questionId = $_POST['questions-'.$i];
+            $question = $this->questions->get($questionId);
+            $listAnswers = $this->answers->getAnswer($questionId);
+            if($this->answers->checkAnswer($questionId) === true){
+                $answerArr = $_POST['answer-'.$i];
+                if($answerArr !== null){
+                    for($j=0;$j<count($answerArr);$j++){
+                        if($value->id == $answerArr[$j] && $value->correct == 1){
+                            $isRight = true;
+                        }else{
+                            $isRight = false;
+                        }
+                    }
+                    if($isRight == true){
+                        $point+=$question[0]->point;   
+                    }
+                }
+            }else{
+                $answerId = $_POST['answer-'.$i];
+                if($answerId !== null){
+                    foreach ($listAnswers as $key => $value) { 
+                        if($value->id === $answerId && $value->correct === 1){
+                            $point+=$question[0]->point;
+                        }
+                    }
+                }
+            }
+        }
+        $data = array('result' => $point,'complete' => 1);
+        $where = array('name' => $code);
+        $this->exams->update($data,$where);
+        echo json_encode($point);
+    }
+
 }
