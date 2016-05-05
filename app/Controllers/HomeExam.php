@@ -59,17 +59,7 @@ class HomeExam extends Controller {
 
             $entity = array('name'=>$name,'date_start'=>$startDate,'date_end'=>$endDate,'user'=>$userId,'level'=>$level,'question' => $questions,'total'=>$total,'result'=>0,'complete'=>0);
             $this->exams->add($entity);
-
-            $data['title'] = 'Test';
-            $data['code'] = $name;
-            $data['questions'] = $questions;
-            $data['listId'] = $listId;
-            $data['from'] = $startDate;
-            $data['to'] = $endDate;
-            $data['total'] = $total;
-            View::renderTemplate('header', $data,'home');
-            View::render('Home/Test', $data);
-            View::renderTemplate('footer', $data,'home');
+            Url::redirect("code?code=".$name);
         }
     }
 
@@ -194,7 +184,6 @@ class HomeExam extends Controller {
                
             }else{
                 $answerId = $_POST['answer-'.$i];
-                //echo json_encode($answerId);
                 if($answerId !== null){
                     $answerStr .= $answerId.',';
                     foreach ($listAnswers as $key => $value) { 
