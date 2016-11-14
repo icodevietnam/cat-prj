@@ -17,9 +17,9 @@ class HomeIndex extends Controller {
     public function index(){
     	$data['title'] = 'Home';
         //$data['levels'] = $this->levels->getAll();
-    	View::renderTemplate('header', $data,'home');
+    	View::renderTemplate('header', $data,'Home');
         View::render('Home/Home', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
     }
 
 

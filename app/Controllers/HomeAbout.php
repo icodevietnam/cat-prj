@@ -17,9 +17,9 @@ class HomeAbout extends Controller {
     public function index(){
     	$data['title'] = 'AboutUs';
         //$data['levels'] = $this->levels->getAll();
-    	View::renderTemplate('header', $data,'home');
+    	View::renderTemplate('header', $data,'Home');
         View::render('Home/AboutUs', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
     }
 
 

@@ -21,18 +21,18 @@ class HomeNews extends Controller {
     	$data['title'] = 'News';
         //$data['levels'] = $this->levels->getAll();
         $data['news'] = $this->news->getAllNews();
-    	View::renderTemplate('header', $data,'home');
+    	View::renderTemplate('header', $data,'Home');
         View::render('Home/News', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
     }
 
     public function notifications(){
         $data['title'] = 'Notification';
         //$data['levels'] = $this->levels->getAll();
         $data['notifications'] = $this->news->getAllNotifications();
-        View::renderTemplate('header', $data,'home');
+        View::renderTemplate('header', $data,'Home');
         View::render('Home/Notification', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
     }
 
 

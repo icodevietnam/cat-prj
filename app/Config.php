@@ -61,7 +61,7 @@ class Config
         /**
          * Set the default template.
          */
-        define('HOME', 'HOME');
+        define('HOME', 'Home');
 
 
         /**

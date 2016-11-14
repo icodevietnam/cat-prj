@@ -23,9 +23,9 @@ class HomeHistory extends Controller {
         $userId = Session::get('user')[0]->id;
         $listExams = $this->exams->getExamsById($userId);
         $data['listExams'] = $listExams;
-    	View::renderTemplate('header', $data,'home');
+    	View::renderTemplate('header', $data,'Home');
         View::render('Home/History', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
     }
 
     public function updateExams(){

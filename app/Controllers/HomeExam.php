@@ -28,9 +28,9 @@ class HomeExam extends Controller {
     public function exam(){
     	$data['title'] = 'Exams';
         $data['levels'] = $this->levels->getAll();
-    	View::renderTemplate('header', $data,'home');
+    	View::renderTemplate('header', $data,'Home');
         View::render('Home/Exam', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
     }
 
     public function test(){
@@ -41,9 +41,9 @@ class HomeExam extends Controller {
             $data['title'] = 'Exams';
             $data['levels'] = $this->levels->getAll();
             $data['message'] = 'You have the exams did not complete. So you can not create new test.Go to History menu, and choose your exams is not finished';
-            View::renderTemplate('header', $data,'home');
+            View::renderTemplate('header', $data,'Home');
             View::render('Home/Exam', $data);
-            View::renderTemplate('footer', $data,'home');
+            View::renderTemplate('footer', $data,'Home');
         }else{
             $name = 'test-'.$userId.'-'.$level.'-'.uniqid();
             $startDate = date("Y-m-d H:i:s");
@@ -94,9 +94,9 @@ class HomeExam extends Controller {
         $data['to'] = $dateEnd;
         $data['backup'] = $exam[0]->backup;
         $data['total'] = $exam[0]->total;
-        View::renderTemplate('header', $data,'home');
+        View::renderTemplate('header', $data,'Home');
         View::render('Home/Review', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
     }
 
     public function testByCode(){
@@ -112,9 +112,9 @@ class HomeExam extends Controller {
             $data['title'] = 'Exams';
             $data['levels'] = $this->levels->getAll();
             $data['message'] = 'This test is over, time up';
-            View::renderTemplate('header', $data,'home');
+            View::renderTemplate('header', $data,'Home');
             View::render('Home/Exam', $data);
-            View::renderTemplate('footer', $data,'home');
+            View::renderTemplate('footer', $data,'Home');
         }else{
         $questions = $exam[0]->question;
         $questionArray = explode("-", $questions);
@@ -139,9 +139,9 @@ class HomeExam extends Controller {
         $data['from'] =$dateStart;
         $data['to'] = $dateEnd;
         $data['total'] = $exam[0]->total;
-        View::renderTemplate('header', $data,'home');
+        View::renderTemplate('header', $data,'Home');
         View::render('Home/Test', $data);
-        View::renderTemplate('footer', $data,'home');
+        View::renderTemplate('footer', $data,'Home');
         //echo json_encode($data['code']);
         }
     }
