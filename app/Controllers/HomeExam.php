@@ -51,15 +51,15 @@ class HomeExam extends Controller {
             //Load 10 câu hỏi 1 lúc
             $listId = $this->surfQuestion($level);
             $total = 0;
-            for ($i=count($listId)- 1; $i >=0 ; $i--) { 
+            for ($i= 0; $i <= count($listId) ; $i++) { 
                 $questions .= $listId[$i]->id.'-';
                 $total+= $listId[$i]->point; 
             }
-            $questions = substr($questions,0,strlen($questions)-1);
-
+            $questions = substr($questions,0,strlen($questions)-2);
             $entity = array('name'=>$name,'date_start'=>$startDate,'date_end'=>$endDate,'user'=>$userId,'level'=>$level,'question' => $questions,'total'=>$total,'result'=>0,'complete'=>0);
             $this->exams->add($entity);
             Url::redirect("code?code=".$name);
+            //echo count($questions);
         }
     }
 
@@ -148,12 +148,12 @@ class HomeExam extends Controller {
 
     //Length Question : so luong cau hoi
     //Level theo ID
-    private function surfQuestion($level,$length = QUESTION ){
+    private function surfQuestion($level,$length = QUESTION_SIZE ){
         $questionStr = '';
         $data = $this->questions->checkQuestionsByLevels($level);
         shuffle($data);
-        $randomId = array_slice($data, 0,$length);
-        return $randomId;
+        //$randomId = array_slice($data, 0,$length);
+        return $data;
     }
 
     public function markTest(){

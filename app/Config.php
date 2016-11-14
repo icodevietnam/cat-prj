@@ -51,7 +51,7 @@ class Config
         /**
          * Set the default number of question.
          */
-        define('QUESTION', 7);
+        define('QUESTION_SIZE', 7);
 
         /**
          * Set the default template.
