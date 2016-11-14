@@ -51,7 +51,7 @@ class HomeExam extends Controller {
             //Load 10 câu hỏi 1 lúc
             $listId = $this->surfQuestion($level);
             $total = 0;
-            for ($i= 0; $i <= count($listId) ; $i++) { 
+            for ($i= 0; $i <= QUESTION_SIZE ; $i++) { 
                 $questions .= $listId[$i]->id.'-';
                 $total+= $listId[$i]->point; 
             }
@@ -72,7 +72,7 @@ class HomeExam extends Controller {
         $dateEnd = date('Y-m-d H:i:s', strtotime($exam[0]->date_end));
         $questions = $exam[0]->question;
         $questionArray = explode("-", $questions);
-        for($i=0;$i < count($questionArray);$i++){
+        for($i=0;$i < QUESTION_SIZE;$i++){
             $s1 = $this->questions->get($questionArray[$i]);
             $stdCls = new \stdClass();
             $stdCls->id = $s1[0]->id;
@@ -118,7 +118,7 @@ class HomeExam extends Controller {
         }else{
         $questions = $exam[0]->question;
         $questionArray = explode("-", $questions);
-        for($i=0;$i < count($questionArray);$i++){
+        for($i=0;$i < QUESTION_SIZE;$i++){
             $s1 = $this->questions->get($questionArray[$i]);
             $stdCls = new \stdClass();
             $stdCls->id = $s1[0]->id;

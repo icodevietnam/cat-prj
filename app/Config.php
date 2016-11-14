@@ -22,7 +22,7 @@ class Config
         /**
          * Define the complete site URL.
          */
-        define('SITEURL', 'http://localhost/cat-prj/');
+        define('SITEURL', 'http://localhost:9090/cat-prj/');
 
         /**
          * Define relative base path.
