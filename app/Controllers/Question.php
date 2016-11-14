@@ -43,7 +43,7 @@ class Question extends Controller {
         $level  = $_POST['level'];
         $point = $_POST['point'];
         $upload = new \Helpers\UploadCoded();
-        $audio = $upload->upload('audio','image|audio',20480000);
+        $audio = $upload->upload('audio','image|audio',2048000000);
         $fileName = $_FILES['audio']['name'];
 
         if("" === $fileName){

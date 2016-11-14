@@ -49,7 +49,7 @@
                             <?php echo Session::get('user')[0]->fullname ?>
                     </a>
                     <ul id="dropdown2" class="dropdown-content active" style="white-space: nowrap; position: absolute; top: 56px; left: 1126.59px; opacity: 1; display: block;">     
-                        <li style="width: 100%"><a href="<?=DIR;?>logout">Đăng xuất</a></li>
+                        <li style="width: 100%"><a href="<?=DIR;?>logout">Log out</a></li>
                     </ul>
                 </li>
             </ul>

@@ -94,7 +94,7 @@ class Config
         /**
          * Database password.
          */
-        define('DB_PASS', 'root');
+        define('DB_PASS', '');
 
         /**
          * PREFER to be used in database calls default is smvc_
@@ -115,7 +115,7 @@ class Config
         /**
          * Define upload image size   
          */
-        define('SIZEIMAGE', 2048000);
+        define('SIZEIMAGE', 2048000000);
 
 
         /**
