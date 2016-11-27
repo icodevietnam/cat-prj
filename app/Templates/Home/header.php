@@ -8,6 +8,8 @@
     <?php
     echo $meta;//place to pass data / plugable hook zone
     Assets::css([
+        Url::templatePath().'css/bootstrap.min.css',
+        Url::templatePath().'css/bootstrap-theme.min.css',
         Url::templateHomePath().'css/materialize.min.css',
         Url::templateHomePath().'css/style.css',
     ]);
@@ -20,9 +22,31 @@
         Url::templatePath().'js/moment.js',
         Url::templatePath().'js/tinymce/tinymce.min.js',
         Url::templatePath().'js/tinymce/jquery.tinymce.min.js',
+        Url::templatePath().'js/bootstrap.min.js',
         Url::templatePath().'js/jquery.validate.js'
     ]);
     ?>
+
+    <style type="text/css" media="screen">
+        li a {
+            color: #FFFFFF;
+        }
+        li a:hover{
+            color: yellow;
+            text-decoration: none;
+        }
+        li a:visited{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .dropdown-menu>li>a {
+            color: #FFFFFF;
+        }
+        .dropdown-menu>li>a:hover{
+            color: yellow;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <nav class="orange darken-4" role="navigation">
@@ -67,6 +91,16 @@
                 if(Session::get('user')[0]->username != '')
                 {
             ?>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lession<span class="caret"></span></a>
+                <ul style="background: #222;color: #FFFFFF;" class="dropdown-menu">
+                    <?php 
+                        foreach ($categories as $category) {
+                            echo "<li style='width:100%;'><a class='page-scroll' title='".$category->description."' href='".DIR."cat/".$category->code."'>".$category->name."</a></li>";
+                        }
+                    ?>
+                </ul>
+            </li>
             <li><a href="<?=DIR;?>exam">Examination</a></li>
             <li><a href="<?=DIR;?>history">History</a></li>
             <?php 
@@ -79,6 +113,7 @@
 
           <ul id="nav-mobile" class="side-nav">
             <li><a href="#">Home</a></li>
+            <li><a href="<?=DIR;?>exam">Lession</a></li>
             <li><a href="#">Examination</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Notifications</a></li>

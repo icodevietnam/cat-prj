@@ -110,6 +110,13 @@
                     </ul>
                 </li>
                 <?php } ?>
+                <li class="news <?php if($menu == 'lession') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
+                    class="nav-label">Lession</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="<?=DIR;?>admin/category">Manage Category</a></li>
+                        <li><a href="<?=DIR;?>admin/lession">Manage Lession</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>

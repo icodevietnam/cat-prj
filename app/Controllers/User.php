@@ -41,8 +41,8 @@ class User extends Controller {
         $birthDate = $_POST['birthDate'];
         $email = $_POST['email'];
         $role = $_POST['role'];
-        $upload = new \Helpers\UploadCoded();
-        $avatar = $upload->upload('avatar','image');
+        $upload = new \Helpers\Upload();
+        $avatar = $upload->uploadFile($_FILES['avatar']);
         $birthDate = date('Y-m-d',strtotime($birthDate));
         $fileName = $_FILES['avatar']['name'];
 
@@ -71,8 +71,8 @@ class User extends Controller {
         $fullName = $_POST['fullName'];
         $birthDate = $_POST['birthDate'];
         $email = $_POST['email'];
-        $upload = new \Helpers\UploadCoded();
-        $avatar = $upload->upload('avatar','image');
+        $upload = new \Helpers\Upload();
+        $avatar = $upload->uploadFile($_FILES['avatar']);
         $birthDate = date('Y-m-d',strtotime($birthDate));
         $role = $_POST['role'];
         $fileName = $_FILES['avatar']['name'];

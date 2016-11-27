@@ -30,6 +30,7 @@
 						<div class="col-sm-10">
 							<input type="file" class="avatar form-control" name="avatar" >
 							<img width="120px" class="img-rounded preview" src="<?= $user[0]->avatar ?>"  />
+							<label id="image-error" class="error" for="image">Image is not blank</label>
 						</div>
 					</div>
 					<div class="form-group">

@@ -9,14 +9,17 @@ use Helpers\Url;
 
 class HomeIndex extends Controller {	
 
+    private $categories;
+
 	public function __construct()
     {
         parent::__construct();
+        $this->categories = new \App\Models\Categories();
     }
 
     public function index(){
     	$data['title'] = 'Home';
-        //$data['levels'] = $this->levels->getAll();
+        $data['categories'] = $this->categories->getAll();
     	View::renderTemplate('header', $data,'Home');
         View::render('Home/Home', $data);
         View::renderTemplate('footer', $data,'Home');

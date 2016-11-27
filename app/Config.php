@@ -22,7 +22,7 @@ class Config
         /**
          * Define the complete site URL.
          */
-        define('SITEURL', 'http://localhost:9090/cat-prj/');
+        define('SITEURL', 'http://localhost/cat-prj/');
 
         /**
          * Define relative base path.
@@ -116,6 +116,9 @@ class Config
          * Define upload image size   
          */
         define('SIZEIMAGE', 2048000000);
+
+
+        define('FILE_PATH', 'assets/file/');
 
 
         /**

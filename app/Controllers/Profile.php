@@ -46,13 +46,13 @@ class Profile extends Controller {
         $username = $_POST['username'];
         $fullName = $_POST['fullname'];
         $email = $_POST['email'];
-        $upload = new \Helpers\UploadCoded();
-        $avatar = $upload->upload('avatar','image');
+        $upload = new \Helpers\Upload();
+        $avatar = $upload->uploadFile($_FILES['avatar']);
         $fileName = $_FILES['avatar']['name'];
         if("" === $fileName){
             $data = array('username' => $username,'fullname' => $fullName,'email' => $email);
         }else{
-            $data = array('username' => $username,'fullname' => $fullName,'email' => $email,'avatar' => $avatar );
+            $data = array('username' => $username,'fullname' => $fullName,'email' => $email,'avatar' => $avatar['path']);
         }
 
         $where = array('id' => $id);

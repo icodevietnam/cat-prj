@@ -33,6 +33,8 @@ Router::any('admin/dashboard', 'App\Controllers\Dashboard@index');
 Router::any('admin','App\Controllers\Dashboard@index');
 Router::any('admin/','App\Controllers\Dashboard@index');
 Router::get('admin/notification', 'App\Controllers\Notification@index');
+Router::get('admin/category', 'App\Controllers\Category@index');
+Router::get('admin/lession', 'App\Controllers\Lession@index');
 Router::get('admin/news', 'App\Controllers\Notification@index2');
 Router::get('admin/question-answer', 'App\Controllers\Question@index');
 Router::get('admin/profile', 'App\Controllers\Profile@profile');
@@ -57,6 +59,14 @@ Router::post('role/add', 'App\Controllers\Role@add');
 Router::post('role/delete', 'App\Controllers\Role@delete');
 Router::get('role/get', 'App\Controllers\Role@get');
 Router::post('role/update', 'App\Controllers\Role@update');
+
+//Role Category Action
+Router::get('category/getAll', 'App\Controllers\Category@getAll');
+Router::post('category/add', 'App\Controllers\Category@add');
+Router::post('category/delete', 'App\Controllers\Category@delete');
+Router::get('category/get', 'App\Controllers\Category@get');
+Router::post('category/update', 'App\Controllers\Category@update');
+Router::get('category/checkCode', 'App\Controllers\Category@checkCode');
 
 //User Admin Action
 Router::get('user/getAll', 'App\Controllers\User@getAll');
@@ -102,6 +112,11 @@ Router::post('answer/delete', 'App\Controllers\Question@deleteAns');
 Router::post('answer/add', 'App\Controllers\Question@addAns');
 Router::post('answer/update', 'App\Controllers\Question@updateAns');
 Router::get('answer/get', 'App\Controllers\Question@getAns');
+
+//File Action
+Router::post('/file/checkDocument', 'App\Controllers\File@checkDocument');
+Router::post('/file/checkImage', 'App\Controllers\File@checkImage');
+Router::post('/file/checkAvatar', 'App\Controllers\File@checkAvatar');
 
 /** End default routes */
 
