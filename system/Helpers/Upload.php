@@ -125,4 +125,29 @@ class Upload {
 		return $message;
 	}
 
+	function checkAudio($element,$size = SIZEIMAGE){
+		$message = null;
+		if($element['name']){
+			//if no errors...
+			if(!$element['error']){
+				$name = strtolower($element['name']);
+				$ext = end((explode(".", $name)));
+				$time = time();
+				$newName = md5($name.$time).$ext;
+
+				if( (strtolower($ext) === 'mp3' || strtolower($ext) === 'wma' ) && ( $element['size'] < ($size) ) ){
+					$message = 'true';
+				}
+				else{
+					if($element['size'] > ($size)){
+						$message = 'wrong-size';
+					}else{
+						$message = 'wrong-file';
+					}
+				}
+			}
+		}
+		return $message;
+	}
+
 }

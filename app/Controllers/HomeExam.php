@@ -15,6 +15,7 @@ class HomeExam extends Controller {
     private $exams;
     private $questions;
     private $answers;
+    private $categories;
 
 	public function __construct()
     {
@@ -23,11 +24,13 @@ class HomeExam extends Controller {
         $this->exams = new \App\Models\Exams();
         $this->questions = new \App\Models\Questions();
         $this->answers = new \App\Models\Answers();
+        $this->categories = new \App\Models\Categories();
     }
 
     public function exam(){
     	$data['title'] = 'Exams';
         $data['levels'] = $this->levels->getAll();
+        $data['categories'] = $this->categories->getAll();
     	View::renderTemplate('header', $data,'Home');
         View::render('Home/Exam', $data);
         View::renderTemplate('footer', $data,'Home');

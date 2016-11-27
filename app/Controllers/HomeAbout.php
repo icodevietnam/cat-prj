@@ -12,11 +12,13 @@ class HomeAbout extends Controller {
 	public function __construct()
     {
         parent::__construct();
+        $this->categories = new \App\Models\Categories();
     }
 
     public function index(){
     	$data['title'] = 'AboutUs';
         //$data['levels'] = $this->levels->getAll();
+        $data['categories'] = $this->categories->getAll();
     	View::renderTemplate('header', $data,'Home');
         View::render('Home/AboutUs', $data);
         View::renderTemplate('footer', $data,'Home');

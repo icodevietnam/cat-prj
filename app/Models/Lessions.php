@@ -53,6 +53,16 @@ class Lessions extends Model
 		return $data;
 	}
 
+	function getCategory($category){
+		$data = null;
+		try {
+			$data = $this->db->select("SELECT * FROM ".PREFIX."lessions WHERE category =:category",array(':category' => $category));
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+		}
+		return $data;
+	}
+
 	function update($data,$where){
 		try {
 			$this->db->update(PREFIX."lessions",$data,$where);

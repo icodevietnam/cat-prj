@@ -68,6 +68,13 @@ Router::get('category/get', 'App\Controllers\Category@get');
 Router::post('category/update', 'App\Controllers\Category@update');
 Router::get('category/checkCode', 'App\Controllers\Category@checkCode');
 
+//Role Lession Action
+Router::get('lession/getAll', 'App\Controllers\Lession@getAll');
+Router::post('lession/add', 'App\Controllers\Lession@add');
+Router::post('lession/delete', 'App\Controllers\Lession@delete');
+Router::get('lession/get', 'App\Controllers\Lession@get');
+Router::post('lession/update', 'App\Controllers\Lession@update');
+
 //User Admin Action
 Router::get('user/getAll', 'App\Controllers\User@getAll');
 Router::post('user/add', 'App\Controllers\User@add');
@@ -117,6 +124,8 @@ Router::get('answer/get', 'App\Controllers\Question@getAns');
 Router::post('/file/checkDocument', 'App\Controllers\File@checkDocument');
 Router::post('/file/checkImage', 'App\Controllers\File@checkImage');
 Router::post('/file/checkAvatar', 'App\Controllers\File@checkAvatar');
+
+Router::get('/cat/(:all)','App\Controllers\Category@lessionPage');
 
 /** End default routes */
 

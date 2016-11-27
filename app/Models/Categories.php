@@ -53,6 +53,16 @@ class Categories extends Model
         return $data;
     }
 
+    function getCode($code){
+        $data = null;
+        try {
+            $data = $this->db->select("SELECT * FROM ".PREFIX."categories WHERE code =:code",array(':code' => $code));
+        } catch (Exception $e) {
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
+        }
+        return $data[0];
+    }
+
     function update($data,$where){
         try {
             $this->db->update(PREFIX."categories",$data,$where);

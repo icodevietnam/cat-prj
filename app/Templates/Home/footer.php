@@ -89,7 +89,7 @@
                 <button type="button" onclick="signupForm.submit();" class="col s12 btn btn-large teal waves-effect waves-light darken-3">Sign Up</button>
 	    	</form>
 	    </div>
-  </div>
+  	</div>
 	</div>
 <script>
 	$(document).ready(function() {

@@ -3,47 +3,75 @@ $(function() {
 	
 	$("#newItemForm").validate({
 		rules : {
-			name:{
+			title:{
 				required:true
 			},
-			description:{
+			description :{
 				required:true
+			},
+			content:{
+				required:true
+			},
+			image : {
+				required : true
 			}
 		},
 		messages : {
-			name:{
-				required:"Name is not blank"
+			title:{
+				required:"Title is not blank"
 			},
 			description:{
 				required:"Description is not blank"
+			},content:{
+				required:"Content is not blank"
+			},image : {
+				required : "Image is not blank"
 			}
-		},
+		}
 	});
 	
 	$("#updateItemForm").validate({
 		rules : {
-			name:{
+			title:{
 				required:true
 			},
-			description:{
+			description :{
 				required:true
+			},
+			content:{
+				required:true
+			},
+			image : {
+				required : true
 			}
 		},
 		messages : {
-			name:{
-				required:"Name is not blank"
+			title:{
+				required:"Title is not blank"
 			},
 			description:{
 				required:"Description is not blank"
+			},content:{
+				required:"Content is not blank"
+			},image : {
+				required : "Image is not blank"
 			}
-		},
+		}
+	});
+
+	$("#newItemForm .image").change(function(){
+		checkImage(this,"#newItemForm");
+	});
+
+	$("#updateItemForm .image").change(function(){
+		checkImage(this,"#updateItemForm");
 	});
 });
 
 function displayTable() {
 	var dataItems = [];
 	$.ajax({
-		url : "/cat-prj/role/getAll",
+		url : "/cat-prj/lession/getAll",
 		type : "GET",
 		dataType : "JSON",
 		success : function(response) {
@@ -52,7 +80,7 @@ function displayTable() {
 				i++;
 				dataItems.push([
 						i,
-						value.name,value.description,
+						value.title,value.description,
 						"<button class='btn btn-sm btn-primary' onclick='getItem("
 								+ value.id + ");' >Edit</button>",
 						"<button class='btn btn-sm btn-danger' onclick='deleteItem("
@@ -70,7 +98,7 @@ function displayTable() {
 				"aoColumns" : [ {
 					"sTitle" : "No"
 				}, {
-					"sTitle" : "Name"
+					"sTitle" : "Title"
 				}, {
 					"sTitle" : "Description"
 				}, {
@@ -85,7 +113,7 @@ function displayTable() {
 
 function getItem(id) {
 	$.ajax({
-		url : "/cat-prj/role/get",
+		url : "/cat-prj/lession/get",
 		type : "GET",
 		data : {
 			itemId : id
@@ -94,8 +122,14 @@ function getItem(id) {
 		success : function(data) {
 			$.each(data, function(key, value) {
 				$("#updateItemForm .id").val(value.id);
-				$("#updateItemForm .name").val(value.name);
+				$("#updateItemForm .title").val(value.title);
 				$("#updateItemForm .description").val(value.description);
+				tinyMCE.activeEditor.setContent(value.content);
+				$("#updateItemForm .video").val(value.video);
+				//$("#updateItemForm .image").val(value.img);
+				$("#updateItemForm .preview").attr({
+					'src' : value.img
+				});
 			})	
 		},
 		complete : function(){
@@ -110,7 +144,7 @@ function getItem(id) {
 function deleteItem(id) {
 	if (confirm("Are you sure you want to proceed?") == true) {
 		$.ajax({
-			url : "/cat-prj/role/delete",
+			url : "/cat-prj/lession/delete",
 			type : "POST",
 			data : {
 				itemId : id
@@ -126,52 +160,87 @@ function deleteItem(id) {
 }
 
 function update() {
+	var form = $("#updateItemForm");
+	var formData =  new FormData(form[0]);
 	if($("#updateItemForm").valid()){
-		var id = $("#updateItemForm .id").val();
-		var name = $("#updateItemForm .name").val();
-		var description = $("#updateItemForm .description").val();
 		$.ajax({
-			url : "/cat-prj/role/update",
+			url : "/cat-prj/lession/update",
 			type : "POST",
-			data : {
-				id : id,
-				name : name,
-				description : description
-			},
+			data : formData,
+			contentType : false,
+			processData : false,
 			dataType : "JSON",
 			success : function(response) {
 			},
 			complete:function(){
 				displayTable();
-				$("#updateItemForm .id").val(" ");
-				$("#updateItemForm .name").val(" ");
-				$("#updateItemForm .description").val(" ");
 				$("#updateItem").modal("hide");
+				$("#updateItemForm .title").val("");
+				$("#updateItemForm .description").val("");
+				tinyMCE.activeEditor.setContent('');
+				$("#updateItemForm .image").val("");
 			}
 		});
 	}
 }
 
 function insertItem() {
+	var form = $("#newItemForm");
+	var formData =  new FormData(form[0]);
 	if($("#newItemForm").valid()){
-		var name = $("#newItemForm .name").val();
-		var description = $("#newItemForm .description").val();
 		$.ajax({
-			url : "/cat-prj/role/add",
+			url : "/cat-prj/lession/add",
 			type : "POST",
-			data : {
-				name : name,
-				description : description
-			},
+			data : formData,
+			contentType : false,
+			processData : false,
 			dataType : "JSON",
 			success : function(response) {
 			},
 			complete : function(){
 				displayTable();
 				$("#newItem").modal("hide");
-				$("#newItemForm .name").val(" ");
-				$("#newItemForm .description").val(" ");
+				$("#newItemForm .title").val("");
+				$("#newItemForm .description").val("");
+				tinyMCE.activeEditor.setContent('');
+				$("#newItemForm .image").val("");
 			}
 		});
 	}
+}
+
+function checkImage(input,formId){
+		var form = $(formId);
+		var formData =  new FormData(form[0]);
+		$.ajax({
+			url : "/cat-prj/file/checkImage",
+			type : "POST",
+			data : formData,
+			contentType : false,
+			processData : false,
+			dataType : "JSON",
+			success : function(response) {
+				console.log(response);
+				if(response === 'wrong-file' ){
+					$(formId +' .image-error').text("File belongs Document type : jpg, jpeg, png, bmp .").show().delay(5000).fadeOut();
+					$(formId +' .image').val('');
+				}
+				if(response === 'wrong-size' ){
+					$(formId +' .image-error').text("Size is larger than default size .").show().delay(5000).fadeOut();
+					$(formId +' .image').val('');
+				}
+				if(response === 'true'){
+					$(formId +' .image-error').text("File is attached.").show().delay(10000).fadeOut();
+					if (input.files && input.files[0]) {
+				        var reader = new FileReader();
+
+				        reader.onload = function (e) {
+				            $(formId +' .preview').attr('src', e.target.result);
+				        }
+
+				        reader.readAsDataURL(input.files[0]);
+   					}
+				}
+			}
+		});
 }

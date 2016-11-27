@@ -10,11 +10,13 @@ use Helpers\Url;
 class Category extends Controller {	
 
 	private $categories;
+    private $lessions;
 
 	public function __construct()
     {
         parent::__construct();
         $this->categories = new \App\Models\Categories();
+        $this->lessions = new \App\Models\Lessions();
     }
 
     public function index(){
@@ -64,6 +66,16 @@ class Category extends Controller {
     public function checkCode(){
         $code = $_GET['code'];
         echo json_encode($this->categories->checkCode($code));
+    }
+
+    public function lessionPage($code){
+        $category = $this->categories->getCode($code);
+        $data['title'] = $category->name ;
+        $data['lessions'] = $this->lessions->getCategory($category->id);
+        $data['categories'] = $this->categories->getAll();
+        View::renderTemplate('header', $data,'Home');
+        View::render('Home/Lession', $data);
+        View::renderTemplate('footer', $data,'Home');
     }
 
 }

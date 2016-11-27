@@ -10,11 +10,13 @@ use Helpers\Url;
 class HomeHistory extends Controller {	
 
     private $exams;
+    private $categories;
 
 	public function __construct()
     {
         parent::__construct();
         $this->exams = new \App\Models\Exams();
+        $this->categories = new \App\Models\Categories();
     }
 
     public function index(){
@@ -23,6 +25,7 @@ class HomeHistory extends Controller {
         $userId = Session::get('user')[0]->id;
         $listExams = $this->exams->getExamsById($userId);
         $data['listExams'] = $listExams;
+        $data['categories'] = $this->categories->getAll();
     	View::renderTemplate('header', $data,'Home');
         View::render('Home/History', $data);
         View::renderTemplate('footer', $data,'Home');

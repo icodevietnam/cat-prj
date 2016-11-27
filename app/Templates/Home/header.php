@@ -87,10 +87,6 @@
           <a id="white-text logo-container" href="<?=DIR;?>home" class="brand-logo">English Club</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="<?=DIR;?>home">Home</a></li>
-            <?php 
-                if(Session::get('user')[0]->username != '')
-                {
-            ?>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lession<span class="caret"></span></a>
                 <ul style="background: #222;color: #FFFFFF;" class="dropdown-menu">
@@ -101,6 +97,10 @@
                     ?>
                 </ul>
             </li>
+            <?php 
+                if(Session::get('user')[0]->username != '')
+                {
+            ?>
             <li><a href="<?=DIR;?>exam">Examination</a></li>
             <li><a href="<?=DIR;?>history">History</a></li>
             <?php 

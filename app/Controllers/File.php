@@ -33,4 +33,10 @@ class File extends Controller {
         echo json_encode($message);
     }
 
+    public function checkAudio(){
+        $upload = new \Helpers\Upload();
+        $message = $upload->checkAudio($_FILES['audio']);
+        echo json_encode($message);
+    }
+
 }
