@@ -110,6 +110,7 @@
                     </ul>
                 </li>
                 <?php } ?>
+                <?php if(Session::get('admin')[0]->roleName == 'teacher' ) {?>
                 <li class="news <?php if($menu == 'lession') echo 'active'; ?> "><a href="#"><i class="fa fa-th-large"></i> <span
                     class="nav-label">Lession</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
@@ -117,6 +118,7 @@
                         <li><a href="<?=DIR;?>admin/lession">Manage Lession</a></li>
                     </ul>
                 </li>
+                <?php } ?>
             </ul>
         </div>
     </nav>

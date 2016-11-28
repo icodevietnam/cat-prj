@@ -41,6 +41,7 @@ class HomeExam extends Controller {
         $level = $_GET['level'];
         $userId = $_GET['userId'];
         if($this->exams->checkExams($userId)){
+            $data['categories'] = $this->categories->getAll();
             $data['title'] = 'Exams';
             $data['levels'] = $this->levels->getAll();
             $data['message'] = 'You have the exams did not complete. So you can not create new test.Go to History menu, and choose your exams is not finished';
@@ -54,11 +55,11 @@ class HomeExam extends Controller {
             //Load 10 câu hỏi 1 lúc
             $listId = $this->surfQuestion($level);
             $total = 0;
-            for ($i= 0; $i <= QUESTION_SIZE ; $i++) { 
-                $questions .= $listId[$i]->id.'-';
+            for ($i= 0; $i < QUESTION_SIZE ; $i++) { 
+                $questions.= $listId[$i]->id.'-';
                 $total+= $listId[$i]->point; 
             }
-            $questions = substr($questions,0,strlen($questions)-2);
+            $questions = substr($questions,0,strlen($questions)-1);
             $entity = array('name'=>$name,'date_start'=>$startDate,'date_end'=>$endDate,'user'=>$userId,'level'=>$level,'question' => $questions,'total'=>$total,'result'=>0,'complete'=>0);
             $this->exams->add($entity);
             Url::redirect("code?code=".$name);
@@ -68,6 +69,7 @@ class HomeExam extends Controller {
 
     public function reviewByCode(){
         $code = $_GET['code'];
+        $data['categories'] = $this->categories->getAll();
         $listId = [];
         $data['title'] = 'Review';
         $exam = $this->exams->getExamsByCode($code);
@@ -107,6 +109,7 @@ class HomeExam extends Controller {
         $listId = [];
         $code = $_GET['code'];
         $data['title'] = 'Test';
+
         $exam = $this->exams->getExamsByCode($code);
         $dateStart = date('Y-m-d H:i:s', strtotime($exam[0]->date_start));
         $dateEnd = date('Y-m-d H:i:s', strtotime($exam[0]->date_end));
@@ -115,6 +118,7 @@ class HomeExam extends Controller {
             $data['title'] = 'Exams';
             $data['levels'] = $this->levels->getAll();
             $data['message'] = 'This test is over, time up';
+            $data['categories'] = $this->categories->getAll();
             View::renderTemplate('header', $data,'Home');
             View::render('Home/Exam', $data);
             View::renderTemplate('footer', $data,'Home');
@@ -136,6 +140,7 @@ class HomeExam extends Controller {
             //echo json_encode($stdCls);
             array_push($listId, $stdCls);
         }
+        $data['categories'] = $this->categories->getAll();
         $data['code'] = $exam[0]->name;
         $data['questions'] = $questions;
         $data['listId'] = $listId;
@@ -145,7 +150,7 @@ class HomeExam extends Controller {
         View::renderTemplate('header', $data,'Home');
         View::render('Home/Test', $data);
         View::renderTemplate('footer', $data,'Home');
-        //echo json_encode($data['code']);
+        //echo json_encode($questions);
         }
     }
 
@@ -161,48 +166,31 @@ class HomeExam extends Controller {
 
     public function markTest(){
         $code = $_POST['name'];
-        $length = QUESTION;
         $point = 0;
         $answerStr = '';
-        for($i = 1; $i <= $length ; $i++){
+        $check = null; 
+        for($i = 1; $i <= QUESTION_SIZE ; $i++){
             $questionId = $_POST['questions-'.$i];
             $question = $this->questions->get($questionId);
             $listAnswers = $this->answers->getAnswer($questionId);
-            if($this->answers->checkAnswer($questionId) === true){
-                $answerArr = $_POST['answer-'.$i];
-                if($answerArr !== null){
-                    for($j=0;$j<count($answerArr);$j++){
-                        $answerStr .= $answerArr[$j].',';
-                    }
-                }
-                $correctArr =[];
-                foreach ($listAnswers as $key => $value){
-                    if($value->correct == 1){
-                        array_push($correctArr,$value->id);
-                    }
-                }
-
-                if($correctArr == $answerArr){
+            $studentAnswer = $_POST['answer-'.$i];
+            foreach($listAnswers as $answer){
+                if($studentAnswer == $answer->id || $answer->corrrect == '1'){
                     $point+=$question[0]->point;
+                }else{
+                    $point+= 0;
                 }
-               
-            }else{
-                $answerId = $_POST['answer-'.$i];
-                if($answerId !== null){
-                    $answerStr .= $answerId.',';
-                    foreach ($listAnswers as $key => $value) { 
-                        if($value->id == $answerId && $value->correct == 1){
-                            $point+=$question[0]->point;
-                        }
-                    }
-                }
+                $check = $answer;
             }
+            $answerStr.= $studentAnswer.',';
+
         }
         $answerStr = substr($answerStr,0,strlen($answerStr)-1);
         $data = array('result' => $point,'complete' => 1,'backup'=>$answerStr);
         $where = array('name' => $code);
         $this->exams->update($data,$where);
-        echo json_encode($point);
+        //echo json_encode($point);
+        echo json_encode($check);
     }
 
 }
