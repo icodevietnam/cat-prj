@@ -62,7 +62,7 @@ class Notification extends Controller {
     	$description = $_POST['description'];
     	$content = $_POST['content'];
     	$fileName = $_FILES['image']['name'];
-    	$upload = new \Helpers\UploadCoded();
+    	$upload = new \Helpers\Upload();
     	$image = $upload->upload('image','image');
 
     	if("" === $fileName){
@@ -80,7 +80,7 @@ class Notification extends Controller {
     	$description = $_POST['description'];
     	$content = $_POST['content'];
     	$fileName = $_FILES['image']['name'];
-    	$upload = new \Helpers\UploadCoded();
+    	$upload = new \Helpers\Upload();
     	$image = $upload->upload('image','image');
         if("" === $fileName){
             $data = array('title' => $title, 'description' => $description,'content' => htmlspecialchars($content));
@@ -98,7 +98,7 @@ class Notification extends Controller {
     	$description = $_POST['description'];
     	$content = $_POST['content'];
     	$fileName = $_FILES['image']['name'];
-    	$upload = new \Helpers\UploadCoded();
+    	$upload = new \Helpers\Upload();
     	$image = $upload->upload('image','image');
 
     	if("" === $fileName){
