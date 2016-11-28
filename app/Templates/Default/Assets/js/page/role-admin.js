@@ -143,9 +143,9 @@ function update() {
 			},
 			complete:function(){
 				displayTable();
-				$("#updateItemForm .id").val(" ");
-				$("#updateItemForm .name").val(" ");
-				$("#updateItemForm .description").val(" ");
+				$("#updateItemForm .id").val("");
+				$("#updateItemForm .name").val("");
+				$("#updateItemForm .description").val("");
 				$("#updateItem").modal("hide");
 			}
 		});
@@ -169,8 +169,8 @@ function insertItem() {
 			complete : function(){
 				displayTable();
 				$("#newItem").modal("hide");
-				$("#newItemForm .name").val(" ");
-				$("#newItemForm .description").val(" ");
+				$("#newItemForm .name").val("");
+				$("#newItemForm .description").val("");
 			}
 		});
 	}

@@ -268,12 +268,12 @@ function update() {
 			complete:function(){
 				displayTable();
 				$("#updateItemForm .id").val(" ");
-				$("#updateItemForm .username").val(" ");
-				$("#updateItemForm .password").val(" ");
-				$("#updateItemForm .confirmPassword").val(" ");
-				$("#updateItemForm .fullName").val(" ");
-				$("#updateItemForm .birthDate").val(" ");
-				$("#updateItemForm .email").val(" ");
+				$("#updateItemForm .username").val("");
+				$("#updateItemForm .password").val("");
+				$("#updateItemForm .confirmPassword").val("");
+				$("#updateItemForm .fullName").val("");
+				$("#updateItemForm .birthDate").val("");
+				$("#updateItemForm .email").val("");
 				$("#updateItem").modal("hide");
 			}
 		});
@@ -295,12 +295,12 @@ function insertItem() {
 			},
 			complete : function(){
 				displayTable();
-				$("#newItemForm .username").val(" ");
-				$("#newItemForm .password").val(" ");
-				$("#newItemForm .confirmPassword").val(" ");
-				$("#newItemForm .fullName").val(" ");
-				$("#newItemForm .birthDate").val(" ");
-				$("#newItemForm .email").val(" ");
+				$("#newItemForm .username").val("");
+				$("#newItemForm .password").val("");
+				$("#newItemForm .confirmPassword").val("");
+				$("#newItemForm .fullName").val("");
+				$("#newItemForm .birthDate").val("");
+				$("#newItemForm .email").val("");
 				$("#newItem").modal("hide");
 			}
 		});
